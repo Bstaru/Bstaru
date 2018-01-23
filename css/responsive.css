@@ -1,0 +1,497 @@
+/*LAPTOP*/
+@media only screen and (max-width: 1440px){
+	/*menu laptop*/
+		.gmenu{
+			margin-left: 1%;
+			width: 80%;
+			padding-left: 5%;
+			font-size: 10px;
+		}
+		.gmenu li{
+			margin-right: 20px
+		}
+		.menuTOP{
+			margin-left: 0%;
+			padding-left: 60px;
+		}
+		.logo{
+			width: 200px !important;
+		}
+		.navbar-nav li a{
+			padding-top: 0px;
+		}
+		.active1 a{
+			height: 25px !important;
+		}
+		#navbar li a{
+			height: 30px;
+		}
+		#navbar span.item-menu-principal{
+			height: 30px;
+			padding-top: 5px;
+		}
+	/*menu laptop*/
+
+	/*Carrusel laptop*/
+
+	/*Carrusel laptop*/
+
+	/*Quienes somos laptop*/
+		#quienesSomos{
+			padding-right: 0%;
+			padding-left: 0%;
+			padding-top: 7%;
+		}
+		#quienesSomos img{
+			width: 75%;
+			margin: auto;
+			margin-top: 10%;
+		}
+		#quienesSomos #info{
+			padding-left: 10px;
+			padding-right: 170px;
+			padding-top: 20px;
+		}
+		#quienesSomos #info h1{
+			font-size: 27pt;
+			text-align: left;
+			margin-bottom: 7%;
+		}
+		#quienesSomos #info p{
+			font-size: 16pt;
+			letter-spacing: -1px;
+			text-align: justify;
+			margin-bottom: 15%;
+		}
+	/*Quienes somos laptop*/
+
+	/*Cobertura laptop*/
+		#cobertura{
+			height: auto;
+		}
+		#cobertura h1{
+			margin-top: 50%;
+			font-size: 30pt;
+		}
+	/*Cobertura laptop*/
+
+	/*Credito Feliz laptop*/
+		#CreditoFeliz{
+			height: auto;
+			padding-right: 12%;
+			padding-top: 10%;
+			margin-top: 2%;
+
+		}
+		#CFInfo{
+			padding-right: 10%;
+		}
+		#CFInfo h1{
+			font-size: 28pt;
+		}
+		#CFInfo h3{
+			font-size: 12.8pt;
+			margin-top: 8px;
+		}
+		#CFInfo p{
+			font-size: 8pt;
+		}
+		#caracteristicas1 ul li, #caracteristicas2 ul li{
+			font-size: 8pt;
+		}
+		#caracteristicas1{
+			padding-right: 30px;
+		}
+		#caracteristicas2{
+			padding-right: 0%;
+			margin-left: 0
+		}
+		#caracteristicas2 ul{
+			padding-left: 0;
+		}
+		#caracteristicas1 ul{
+			padding-left: 25px;
+		}
+		#cuadroCaracteristicas{
+			margin-bottom:20%;
+			width: 100%;
+			padding-right: 0px;
+		}
+		.separadorSubtitulo, .requisitosUL{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.requisitosUL{
+			line-height: 80%;
+			margin-bottom: 30% !important;
+		}
+		hr.separadorTitulo{
+			height: 5px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	/*Credito Feliz laptop*/
+
+	/*Nomina Feliz laptop*/
+		.panelCambia{
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		#nominaFeliz{
+			height: auto;
+			padding-left: 12%;
+			padding-right: 15%;
+			padding-top: 50px;
+		}
+		#NFInfo{
+			padding-top: 50px;
+			padding-right: 30px;
+		}
+		#NFInfo h1{
+			font-size: 28pt;
+		}
+		#NFInfo h3{
+			font-size: 12.8pt;
+			margin-top: 8px;
+		}
+		#NFInfo p{
+			font-size: 8pt;
+			margin-right: 35%;
+			margin-bottom: 5%;
+		}
+		#nominaFelizP{
+			margin-bottom: 10%;
+		}
+		#cuadroCaracteristicas2{
+			padding-right: 0;
+		}
+		#caracteristicas3 ul li, #caracteristicas4 ul li{
+			font-size: 8pt;
+			letter-spacing: 0px;
+		}
+		#caracteristicas3{
+			padding-right: 20px;
+		}
+		#caracteristicas4{
+			padding: 0;
+		}
+		#caracteristicas3 ul{
+			padding-left: 30px;
+		}
+		#cuadroCaracteristicas2{
+			margin-bottom:15%;
+		}
+		.separadorSubtitulo, .requisitosUL{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		#nominaFeliz hr.separadorTitulo{
+			height: 5px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border-radius: 26px;
+		}
+		hr.separadorSubtitulo{
+			height: 5px;
+		}
+		.requisitosUL{
+			line-height: 80%;
+		}
+	/*Nomina Feliz laptop*/
+
+	/*Preguntas laptop*/
+		#preguntas{
+			margin-top: 7%;
+			padding-left: 10%;
+			padding-right: 5%;
+		}
+		#preguntasChica{
+			width: 63%;
+			margin-left: 5%;
+		}
+		#preguntasHombre{
+			width: 68%;
+		}
+		#preguntasPrestamo a, #preguntasPagos a{
+			font-size: 12pt;
+		}
+	/*Preguntas laptop*/
+
+	/*Footer laptop*/
+		#Footer{
+			margin-top: 10%;
+		}
+		#footer p{
+			font-size: 6pt;
+		}
+		#footer h3{
+			font-size: 12pt;
+		}
+		#numeros{
+			margin-left: 30%;
+		}
+		#footer h4{
+			font-size: 8pt;
+		}
+		#footer h6{
+			font-size: 6pt;
+		}
+		#footer .hrFooter{
+			margin-bottom: 10px;
+		}
+		#legal{
+			font-size: 6pt;
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+		#direccion img, #legal img{
+			width: 5%;
+			height: auto;
+		}
+		#legal img{
+			width: 3%;
+			height: auto;
+		}
+		.imgRedes{
+			width: 50%;
+		}
+	/*Footer laptop*/
+}
+/*LAPTOP*/
+
+/*TABLET*/
+@media(max-width: 1024px){
+	body{
+		padding-top: 7.5%;
+	}
+	/*menu tablet*/
+	.gmenu{
+		margin-left: 1%;
+		width: 80%;
+		padding-left: 0%;
+		font-size: 10px;
+	}
+	.gmenu li{
+		margin-right: 0px
+	}
+	.menuTOP{
+		margin-left: 0%;
+		padding-left: 12px;
+	}
+	.logo{
+		width: 100px !important;
+	}
+	.navbar-nav li a{
+		padding-top: 0px;
+	}
+	.active1 a{
+		height: 25px !important;
+	}
+	#navbar li a{
+		height: 30px;
+	}
+	#navbar span.item-menu-principal{
+		height: 30px;
+		padding-top: 5px;
+	}
+	/*menu tablet*/
+
+	/*Carrusel tablet*/
+	#nominaCarrusel, #prestamosCarrusel{
+	
+	}
+	.conoceMas{
+		font-size: 8pt;
+		width: 100px;
+		border: 0px;
+	}
+	.conoceMas p{
+		margin-bottom: 10%;
+	}
+	/*Carrusel tablet*/
+
+	/*Quienes somos tablet*/
+	#quienesSomos{
+		padding-top: 25vh;
+    	height: 100vh;
+		padding-right: 0%;
+		padding-left: 0%;
+		background: url(../imgs/quienesSomosBG.png) no-repeat top center; 
+	
+	}
+	#quienesSomos #info{
+		padding-left: 10%;
+		padding-right: 10%;
+		margin-top: 0%;
+	}
+	#quienesSomos #info h1{
+		font-size: 14pt;
+		margin: 0;
+		text-align: center;
+		margin-top: 5%;
+	}
+	#quienesSomos #info p{
+		font-size: 10pt;
+		text-align: justify;
+		letter-spacing: 0px;
+		margin-bottom: 7%;
+	}
+	#quienesSomos img{
+		width: 15%;
+		margin: auto !important;
+	}
+	.carita{
+		padding: 0;
+		margin-bottom: 0;
+	}
+	/*Quienes somos tablet*/
+
+	/*Cobertura tablet*/
+	#cobertura{
+		height: auto;
+	}
+	#cobertura h1{
+		margin-top: 50%;
+		font-size: 16pt;
+	}
+	/*Cobertura tablet*/
+
+	/*Credito Feliz tablet*/
+	#CreditoFeliz{
+		background: none;
+		padding-right: 15%;
+		padding-left: 12%;
+	}
+	#CFInfo h1{
+		text-align: left;
+	}
+
+	#cuadroCaracteristicas{
+		margin-bottom: 5%;
+	}
+	#caracteristicas1 ul li, #caracteristicas2 ul li{
+		font-size: 10pt;
+	}
+	/*Credito Feliz tablet*/
+
+	/*Nomina Feliz tablet*/
+	#nominaFeliz{
+		background: none;
+	}
+	#caracteristicas3 ul li, #caracteristicas4 ul li{
+		font-size: 10pt;
+	}
+	hr.separadorTitulo, #nominaFeliz hr.separadorTitulo{
+		margin-bottom: 5%;
+	}
+	/*Nomina Feliz tablet*/
+
+	/*Preguntas tablet*/
+	#preguntas{
+		padding-left: 10%;
+		margin-top: 10%;
+	}
+	#preguntasPrestamo a, #preguntasPagos a{
+		font-size: 10pt;
+	}
+	#preguntasChica{
+		width: 54%;
+		margin-left: 15%;
+	}
+	#preguntasHombre{
+		width: 58%;
+		margin-left: 15%;
+	}
+	/*Preguntas tablet*/
+
+	/*Footer tablet*/
+	#footer{
+		margin-top: 0%;
+	}
+	#footer p{
+		font-size: 4pt;
+	}
+	#footer h3{
+		font-size: 10pt;
+	}
+	#numeros{
+		margin-left: 35%;
+	}
+	#footer h4{
+		font-size: 6pt;
+	}
+	#footer h6{
+		font-size: 3pt;
+	}
+	#direccion p{
+		margin-left: 13px;
+	}
+	#footer .hrFooter{
+		margin-bottom: 10px;
+	}
+	#legal{
+		font-size: 6pt;
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+	.imgRedes{
+		width: 50%;
+	}
+	/*Footer tablet*/
+}
+/*TABLET*/
+
+/*MOVIL*/
+
+/*MOVIL*/
+
+
+
+
+
+
+
+/*Especial*/
+@media(min-width: 992px) and (max-width: 1024px){
+	#quienesSomos img{
+		width: 60%;
+		margin: auto;
+		margin-top: 10%;
+	}
+	#quienesSomos #info{
+		padding-top: 2%;
+		padding-left: 0%;
+	}
+	#quienesSomos #info h1{
+		text-align: left;
+		margin-bottom: 2%;
+	}
+	#quienesSomos #info p{
+		margin-bottom: 15%;
+	}
+	#CreditoFeliz{
+		background: url(../imgs/creditoBG2.png) center center no-repeat;
+		background-size: cover;
+	}
+	#nominaFeliz{
+		background: url(../imgs/nominaFelizBG2.png) center center no-repeat;
+		background-size: cover;
+	}
+	#caracteristicas3 ul li, #caracteristicas4 ul li{
+		font-size: 7pt;
+		letter-spacing: 0px;
+	}
+	.conoceMas p{
+		margin-bottom: 10%;
+	}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1300px){	
+	.gmenu{
+		width: 75%;
+	}
+	#CreditoFeliz{
+		background: url(../imgs/creditoBG2.png) center center no-repeat;
+		background-size: cover;
+	}
+}
+/*Especial*/
