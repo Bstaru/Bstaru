@@ -1,32 +1,9 @@
-/*
-	-- COLORES --
-
-*/
 
 @charset "utf-8";
 
 /*----RESET ----*/
-	h1,h2,h3,h4,h5,h6,
-	p,a{
-		margin: 0;
-		padding: 0;
-	}
-	a,
-	a:hover,
-	a:visited,
-	a:active{
-		text-decoration: none;
-		}
-	body{
-		background: #fff;
-		}
-	input:focus,
-	select:focus,
-	textarea:focus,
-	button:focus {
-	    outline: none;
-		}
-	@media (min-width: 1920px) {
+	
+/*	@media (min-width: 1920px) {
 	  .container {
 	    width: 1435px;
 	  }
@@ -39,423 +16,171 @@
 	    margin-left: auto;
 	  }
 	}
-
+*/
 	/*@media (min-width: 768px) {
-	  .container {
-	    width: 750px;
+	 
 	  }
 	}
 	@media (min-width: 992px) {
-	  .container {
-	    width: 970px;
+
 	  }
 	}
 	@media (min-width: 1200px) {
-	  .container {
-	    width: 1170px;
-	  }
+	 
 	}*/
 		
-/*-------------------*/
-	.elem-hide{
-		display: none;
-		}
-	.elem-show{
-		display: initial;
-		}
-	.shadow{		
-		-webkit-box-shadow: 5px 5px 26px 0px rgba(199,199,199,1);
-		-moz-box-shadow: 5px 5px 26px 0px rgba(199,199,199,1);
-		box-shadow: 5px 5px 26px 0px rgba(199,199,199,1);
-	}
-
-/*-------------------------------------------------TIPOGRAFIA-----*/
-	/*-------------FUENTES----*/
-
-		@font-face 
-		{
-		   font-family: "AvenirNextLTPro_Demi";
-		   src: url("../fonts/AvenirNextLTPro_Demi.otf");
-		}
-
-	/*generales*/
-		.typ_upper{
-			text-transform: uppercase;
-			}
-		.typ_cap{
-			text-transform: capitalize;
-			}		
-		.typ_italic{
-			font-style: italic;
-			}
-		.typ_c_white{
-			color: #fff;
-			}
-		.typ_c_blue{
-			color: #1a2a54;
-		}
-		.typ_title{
-			 font-family: "AvenirNextLTPro_Demi";
-		}
-		.typ_parr{
-			font-family: "KohinoorDevanagari_Regular";
-		}
-		
 /*-------------------------------------------------NAVBAR---------*/
-	nav{
-		background: #fff;
-		padding: 2vh 0;
-		-webkit-box-shadow: 0px 4px 30px -3px rgba(82,82,82,0.6);
-		-moz-box-shadow: 0px 4px 30px -3px rgba(82,82,82,0.6);
-		box-shadow: 0px 4px 30px -3px rgba(82,82,82,0.6);
-		}
-	.nb-size,.navbar-header, .nb{
-		height: 6vh;
-		}
-	
-	.navbar{
-		margin-bottom:0;
-		}
-	.navbar-brand{
-		height: 6vh;
-		padding: 0 15px;
-		}
-	.navbar-brand img{
-		height: inherit;
+	/* remove outer padding */
+	.main .row{
+		padding: 0px;
+		margin: 0px;
+	}
+
+	/*Remove rounded coners*/
+
+	nav.sidebar.navbar {
+		border-radius: 0px;
+	}
+
+	nav.sidebar, .main{
+		-webkit-transition: margin 200ms ease-out;
+	    -moz-transition: margin 200ms ease-out;
+	    -o-transition: margin 200ms ease-out;
+	    transition: margin 200ms ease-out;
+	}
+
+	/* Add gap to nav and right windows.*/
+	.main{
+		padding: 10px 10px 0 10px;
+	}
+
+	/* .....NavBar: Icon only with coloring/layout.....*/
+
+	/*small/medium side display*/
+	@media (min-width: 768px) {
+
+		/*Allow main to be next to Nav*/
+		.main{
+			position: absolute;
+			width: calc(100% - 40px); /*keeps 100% minus nav size*/
+			margin-left: 40px;
+			float: right;
 		}
 
-	.nb li>a{
-		font-family: "AvenirNextLTPro_Demi";
-		text-transform: uppercase;
-		color: #1b2954;
-		padding: 0 10px;
-	    height: 6vh;
-	    line-height: 6vh;
-	    margin: 0 15px;		
-		position: relative;
-		background-color: transparent!important;		
+		/*lets nav bar to be showed on mouseover*/
+		nav.sidebar:hover + .main{
+			margin-left: 200px;
 		}
-	.nb_selected{
-		border-bottom: 3px solid #ea0985;
-		background-color: transparent!important;
+
+		/*Center Brand*/
+		nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+			margin-left: 0px;
 		}
-	
-	.nb li.active>a,
-	.nb li.here>a:after,
-	.nb li>a:hover:after{
-		position: absolute;
-		left: 0; right: 0;
-		margin: auto;
-		content:"";
-		height: 5vh;
-		width: 67%;
-		border-bottom: 3px solid #ea0985;
-		background-color: transparent!important;
-		}
-	.nb li>a:hover{
-		color: #1b2954;
-		background-color: transparent!important;
-		}
-	.nb li.active>a,
-	.nb li.active>a:hover{
-		color: #1b2954;
-		border-bottom: 3px solid #ea0985;
-		}
-	
-	.nb-cnt-data{
-		display: inline-block;	
-		margin-left: 5px;	 
-		height: 4vh;
-    	margin-top: 1vh;
-		}
-	.nb-cnt-data span{
-		display: block;
-		font-size: 0.8vh;
-		margin-bottom:0.5vh;
-		}
-	.nb-data{
-		display: block;
-		}	
-		.nb-social{
-			display: inline-block;
-			background: #6d6e71;
-			border-radius: 100px;
-			height: 20px;
-		    width: 20px;
-		    color: #fff;
-		    text-align: center;
-		    font-size: 1.3vh;
-		    padding: 2px;
-		}
-		.nb-data input{
-			font-size: 1vh;
-			height: 2.5vh;
-			padding: 0.5vh;
-		}
-	
-	@media (max-width: 1200px) {
-		.nb-cnt-data span{
-			display: block;
-			font-size: 0.8vh;
-			margin-bottom:0.5vh;
-			width: 70px;
-			}
-		.nb-data{
-			display: block;
-			width: 70px;
-			}	
-	}
-	@media (max-width: 1024px) {
-		.navbar{
-			height: max-content;
-			}
-		.navbar-header {
-		    margin-left: -10px!important;
-			}
-	}
-	@media (max-width: 992px) {
-		nav{
-			padding: 2vh 0;		
-			}
-		.nb-size,.navbar-header, .nb{
-			height: auto;
-			}
-		.container.nb-size {
-		   padding-right: 15px;
-		   padding-left: 15px;
-		   margin-right: auto;
-		   margin-left: auto;
-			}
-		nav i.icon,nav i.icons {
-		    font-size: 3vh;
-			}
-		
-		.nb-cnt-data{
-			display: block;
-			margin: 5vh auto;
-			}
-		.nb-cnt-data span{
-			font-size: 1.4vh;
+		/*Center Brand*/
+		nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+			text-align: center;
 			width: 100%;
-			}
-		.nb-data{
-			width:100%;
-			}	
-		.nb-data input{
-			font-size: 2vh;
-		    height: 3.5vh;
-		    padding: 1.5vh;
-		    width: 60%;
-		    margin: 0 auto;
-    		}
+			margin-left: 0px;
+		}
 
-		/*Para cambiar punto en que se colapsa el NAV*/
-		  .navbar-header {
-		      float: none;
-		  }
-		  .navbar-left,.navbar-right {
-		      float: none !important;
-		  }
-		  .navbar-toggle {
-		  	margin-top: 0; 
-			margin-right: 15px;
-			margin-bottom: 0; 
-		    display: block;
-		  }
-		  .navbar-collapse {
-		      border-top: 1px solid transparent;
-		      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-		  }
-		  .navbar-fixed-top {
-		      top: 0;
-		      border-width: 0 0 1px;
-		  }
-		  .navbar-collapse.collapse {
-		      display: none!important;
-		  }
-		  .navbar-nav {
-		      float: none!important;
-		      margin-top: 7.5px;
-		  }
-		  .navbar-nav>li {
-		      float: none;
-		      text-align: center;
-		  }
-		  .navbar-nav>li>a {
-		      padding-top: 10px;
-		      padding-bottom: 10px;
-		      margin: 0 25%;
-		  }
-		  .collapse.in{
-		      display:block !important;
-		  }
-		  .navbar-fixed-bottom .navbar-collapse, 
-		  .navbar-fixed-top .navbar-collapse {
-			max-height: 100%; 
-		  }
+		/*Center Icons*/
+		nav.sidebar a{
+			padding-right: 13px;
+		}
+
+		/*adds border top to first nav box */
+		nav.sidebar .navbar-nav > li:first-child{
+			border-top: 1px #e5e5e5 solid;
+		}
+
+		/*adds border to bottom nav boxes*/
+		nav.sidebar .navbar-nav > li{
+			border-bottom: 1px #e5e5e5 solid;
+		}
+
+		/* Colors/style dropdown box*/
+		nav.sidebar .navbar-nav .open .dropdown-menu {
+			position: static;
+			float: none;
+			width: auto;
+			margin-top: 0;
+			background-color: transparent;
+			border: 0;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+
+		/*allows nav box to use 100% width*/
+		nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+			padding: 0 0px 0 0px;
+		}
+
+		/*colors dropdown box text */
+		.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+			color: #777;
+		}
+
+		/*gives sidebar width/height*/
+		nav.sidebar{
+			width: 200px;
+			height: 100%;
+			margin-left: -160px;
+			float: left;
+			z-index: 8000;
+			margin-bottom: 0px;
+		}
+
+		/*give sidebar 100% width;*/
+		nav.sidebar li {
+			width: 100%;
+		}
+
+		/* Move nav to full on mouse over*/
+		nav.sidebar:hover{
+			margin-left: 0px;
+		}
+		/*for hiden things when navbar hidden*/
+		.forAnimate{
+			opacity: 0;
+		}
+	}
+
+	/* .....NavBar: Fully showing nav bar..... */
+
+	@media (min-width: 1330px) {
+
+		/*Allow main to be next to Nav*/
+		.main{
+			width: calc(100% - 200px); /*keeps 100% minus nav size*/
+			margin-left: 200px;
+		}
+
+		/*Show all nav*/
+		nav.sidebar{
+			margin-left: 0px;
+			float: left;
+		}
+		/*Show hidden items on nav*/
+		nav.sidebar .forAnimate{
+			opacity: 1;
+		}
+	}
+
+	nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+		color: #CCC;
+		background-color: transparent;
+	}
+
+	nav:hover .forAnimate{
+		opacity: 1;
+	}
+	section{
+		padding-left: 15px;
 	}
 
 /*-------------------------------------------------BACKGROUNDS----*/
-	.bg_inicio{
-		margin-top: 10vh;
-		height:90vh;
-		padding-right:0px; 
-    	padding-left: 0px; 
-		/*background: #ea0985;*/
-		/*background: url('../img/BG_INICIO.png') no-repeat center center;*/
-		/*background-size: cover;*/
-		}
-	.bg_somos{
-		height: 100vh;
-		background: url('../img/QuienesSomos.png') no-repeat center center;
-		background-size: cover;
-		}
-		#Somos .container{
-			padding-right: 0px;
-   			padding-left: 0px;
-			}
-	.bg_ADN{
-		padding-top: 10vh;
-		height: 100vh;
-		background: url('../img/BG_ADN.png') no-repeat bottom center;
-		background-size: cover;
-		}
-	.bg_frac{
-		height: 100vh;
-		background: url('../img/BG_FRACC.png') no-repeat center center;
-		background-size: cover;
-		}
-	.bg_frac_d_info{
-		padding-top: 10vh;
-		height: auto;
-		}
-	.bg_PorQ{
-		padding-top: 10vh;
-		height:inherit;
-		}
-		.espacioPorQ{
-			height: 100vh;
-		}
-	.bg_ecot{
-		padding-top: 10vh; 
-		height: 100vh;
-		background: url('../img/BG_AZUL.png') no-repeat center center;
-		background-size: cover;
-		position: relative;
-		}
-	.bg_PtsV{
-		height: 100vh;
-		}
-	.bg_contacto{
-		padding-top: 10vh; 
-		height: 95vh;
-		background: url('../img/BG_CONTACTO.png') no-repeat center center;
-		background-size: cover;
-		}
-	.bg_foot{
-		height: 5vh;
-		background:#15276b; 
-    	background: linear-gradient(to right, #15276b ,#ea0985);
-		}
-	
-	@media (max-width: 992px) {
-		.bg_inicio{
-			margin-top: 10vh;
-			height:auto;
-			padding-right:0px; 
-	    	padding-left: 0px; 
-			}		
-		.bg_somos{
-			margin-top: 0vh;
-			height: 40vh;
-			}
-		.bg_ADN{
-			padding-top: 10vh;
-			height: inherit;
-			background: url('../img/BG_AZUL_M.png') no-repeat bottom center;			
-			background-size: cover;
-			}
-		.bg_frac{
-			height: 100vh;
-			background: url('../img/BG_FRACC_M.png') no-repeat center center;
-			background-size: cover;
-			}
-
-		.bg_mapas{
-			padding-top: 10vh;
-			height: 100vh;
-			background: url('../img/BG_VERDE_M.png') no-repeat center center;
-			background-size: cover;
-		}
-		.bg_PorQ{
-			padding-top: 0vh;
-			}
-			.espacioPorQ{
-				height: 70vh;
-			}
-
-		.bg_foot, .bg_PtsV, .bg_contacto,.bg_ecot{
-			height:auto;
-			}
-	}
-	@media (max-width:640px) {
-		.bg_PorQ{
-			
-			}
-			.espacioPorQ{
-				height: auto;
-			}
-	}
 
 /*-------------------------------------------------FOOTER---------*/
-	.ft-cnt{
-		height: 4vh;
-		line-height: 4vh;
-		}
-	@media (max-width: 992px) {
-		.ft-cnt{
-			height:inherit;
-			line-height:inherit;
-			}
-	}
-	.ft-cnt-data-1{
-		float: left;
-		}
-	.ft-cnt-data-2{
-		float: left;
-		margin-left: 9.5vw;
-		}
-	@media (min-width: 1920px) {
-	  .ft-cnt-data-2{
-		margin-left:15vw;
-		}
-	}
-	.ft-cnt-data-3{
-		float: right;
-		}
-
-	@media (max-width: 992px) {
-		.ft-cnt-data-1{
-			float: none;
-		}
-		.ft-cnt-data-2{
-			float: none;
-			margin-left: 0;
-		}
-		.ft-cnt-data-3{
-			float: none;
-		}
-	}
-	.txt-foot, .txt-foot a{
-		font-family: "UniNeueLight";
-		color: #fff;
-		}
-	.ft-redes{
-		display: inline-block;
-		}
-	.ft-redes a{
-		color: #fff;
-		}
 
 
 /*-------------------------------------------------LANDSCAPE------*/

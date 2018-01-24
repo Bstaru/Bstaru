@@ -1,0 +1,65 @@
+
+@import paleta
+
+/*---------------------------------------RESET*/
+html, body
+	height: 100%
+body 
+	background: $gris
+
+h1,h2,h3,h4,h5,h6,p,a
+	margin: 0
+	padding: 0
+a, a:hover, a:visited, a:active
+	text-decoration: none
+input:focus, 
+select:focus,
+textarea:focus,
+button:focus
+	outline: none
+
+/*----------------------------------GENERALES*/
+.elem-hide
+	display: none
+.elem-show
+	display: initial
+
+=shadow($valShadow)
+	-webkit-box-shadow: $valShadow
+	-moz-box-shadow: $valShadow
+	box-shadow: $valShadow
+.shadow
+	+shadow(5px 5px 26px 0px rgba(199,199,199,1))
+		
+/*------------------------------------------FUENTES */
+@font-face 
+	font-family: "AvenirNextLTPro_Demi"
+	src: url("../fonts/AvenirNextLTPro_Demi.otf")
+.typ_upper
+	text-transform: uppercase	
+.typ_cap
+	text-transform: capitalize		
+.typ_italic
+	font-style: italic	
+.typ_c_white
+	color: #fff	
+.typ_c_blue
+	color: #1a2a54
+
+%message-shared
+	border: 1px solid #ccc
+	padding: 10px
+	color: #333
+.msg
+	@extend %message-shared
+.success
+	@extend %message-shared
+	border-color: green
+.error
+	@extend %message-shared
+	border-color: red
+.warning
+	@extend %message-shared
+	border-color: yellow
+
+	

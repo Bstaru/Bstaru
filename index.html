@@ -16,32 +16,35 @@
 		<link rel="stylesheet" type="text/css" href="css/iziModal.min.css" />
 
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body>
-	<nav class="navbar navbar-fixed-top">
-	  <div class="container nb-size">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nb_coll" aria-expanded="false">
-	        <span class="sr-only">More</span>
-	        <i class="content icon"></i>
-	      </button>
-	      <a class="navbar-brand op-links" href="#inicio">
-	      	<img src="img/LOGO_MINI.png" class="img-responsive">
-	      </a>
-	    </div>
-
-	    <div class="collapse navbar-collapse" id="nb_coll">
-	      <ul class="nav navbar-nav nb">
-	        <li class="op_n" id="s"><a href="#Somos" class="op-links">EMPRESA</a></li>
-	        <li class="op_n" id="a"><a href="#ADN" class="op-links">NUESTRO ADN</a></li>    
-	        <li class="op_n" id="f"><a href="#Frac" class="op-links">Fraccionamientos</a></li> 
-	        <li class="op_n" id="p"><a href="#PorQ" class="op-links">¿Por qué AGA?</a></li> 
-	        <li class="op_n" id="c"><a href="#PtsV" class="op-links">contacto</a></li>    
-	      </ul>   
-	    </div>
-
-	  </div>
+	<nav class="navbar navbar-inverse sidebar" role="navigation">
+	    <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
+					  <i class="content icon"></i>
+				</button>
+				<a class="navbar-brand" href="#">Brand</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home<i style="font-size:16px;" class="home icon pull-right hidden-xs showopacity glyphicon glyphicon-home"></i></a></li>
+					<li ><a href="#">Profile</a></li>
+					<li ><a href="#">Messages</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span></a>
+						<ul class="dropdown-menu forAnimate" role="menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+						</ul>
+					</li>					
+				</ul>
+			</div>
+		</div>
 	</nav>
 
 	<!-- MODALES DE IMÁGENES-->
@@ -94,7 +97,7 @@
 	<div class="container-fluid">
 		<div class="row" id="inicio">
 			<div class="container bg_inicio">
-				<div id="carou_inicio" class="carousel slide" data-ride="carousel">
+			<!-- 	<div id="carou_inicio" class="carousel slide" data-ride="carousel">
 
 				  <ol class="carousel-indicators">
 				    <li data-target="#carou_inicio" data-slide-to="0" class="active"></li>
@@ -109,7 +112,7 @@
 					    	<div class="img_slider" id="imgSlider2"></div>
 					    </div>
 					</div>
-				</div>	
+				</div>	 -->
 			</div>
 		</div>
 	</div>

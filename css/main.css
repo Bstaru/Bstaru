@@ -1,0 +1,68 @@
+/* HSL */
+/* RGB */
+/*---------------------------------------RESET */
+html, body {
+  height: 100%; }
+
+body {
+  background: #a9bcd0; }
+
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+  padding: 0; }
+
+a, a:hover, a:visited, a:active {
+  text-decoration: none; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+/*----------------------------------GENERALES */
+.elem-hide {
+  display: none; }
+
+.elem-show {
+  display: initial; }
+
+.shadow {
+  -webkit-box-shadow: 5px 5px 26px 0px #c7c7c7;
+  -moz-box-shadow: 5px 5px 26px 0px #c7c7c7;
+  box-shadow: 5px 5px 26px 0px #c7c7c7; }
+
+/*------------------------------------------FUENTES */
+@font-face {
+  font-family: "AvenirNextLTPro_Demi";
+  src: url("../fonts/AvenirNextLTPro_Demi.otf"); }
+.typ_upper {
+  text-transform: uppercase; }
+
+.typ_cap {
+  text-transform: capitalize; }
+
+.typ_italic {
+  font-style: italic; }
+
+.typ_c_white {
+  color: #fff; }
+
+.typ_c_blue {
+  color: #1a2a54; }
+
+.msg, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
+/*# sourceMappingURL=main.css.map */
