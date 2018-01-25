@@ -30,29 +30,7 @@
 	}*/
 		
 /*-------------------------------------------------NAVBAR---------*/
-	/* remove outer padding */
-	.main .row{
-		padding: 0px;
-		margin: 0px;
-	}
 
-	/*Remove rounded coners*/
-
-	nav.sidebar.navbar {
-		border-radius: 0px;
-	}
-
-	nav.sidebar, .main{
-		-webkit-transition: margin 200ms ease-out;
-	    -moz-transition: margin 200ms ease-out;
-	    -o-transition: margin 200ms ease-out;
-	    transition: margin 200ms ease-out;
-	}
-
-	/* Add gap to nav and right windows.*/
-	.main{
-		padding: 10px 10px 0 10px;
-	}
 
 	/* .....NavBar: Icon only with coloring/layout.....*/
 
@@ -165,18 +143,9 @@
 			opacity: 1;
 		}
 	}
+	
 
-	nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
-		color: #CCC;
-		background-color: transparent;
-	}
-
-	nav:hover .forAnimate{
-		opacity: 1;
-	}
-	section{
-		padding-left: 15px;
-	}
+	
 
 /*-------------------------------------------------BACKGROUNDS----*/
 
