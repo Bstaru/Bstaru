@@ -15,33 +15,40 @@
 		<link rel="stylesheet" type="text/css" href="css/flag-icon.min.css">
 		<link rel="stylesheet" type="text/css" href="css/iziModal.min.css" />
 
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body>
-	<nav class="navbar sidebar shadow" role="navigation">
+	<video autoplay loop id="video-background" muted plays-inline><source src="img/stars.mp4"></video>
+
+	<nav class="navbar sidebar navbar-fixed-top shadow" role="navigation">
 	    <div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-sidebar-navbar-collapse-1">
-					  <i class="content icon"></i>
+					  <i class="content icon" style="color: #333; font-size: 4vh"></i>
 				</button>
 				<a class="navbar-brand" href="#">
-					<img src="img/firma.png" class="img-responsive">
+					<img class="nav-logo img-responsive">
 				</a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+				<div class="redes_sociales">
+					<a href="" class="fb"><i class="facebook square icon"></i></a>
+					<a href="" class="tw"><i class="twitter square icon"></i></a>
+					<a href="" class="gh"><i class="github square icon"></i></a>
+					<a href="" class="tb"><i class="tumblr square icon"></i></a>					
+				</div>
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home<i style="font-size:16px;" class="home icon pull-right hidden-xs showopacity glyphicon glyphicon-home"></i></a></li>
-					<li ><a href="#">Profile</a></li>
-					<li ><a href="#">Messages</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Settings <span class="caret"></span></a>
+					<li class=""><a href="#inicio" class="op-links">Home<i class="home icon pull-right hidden-xs showopacity"></i></a></li>
+					<li ><a href="#perfil" class="op-links">Profile<i class="user circle icon pull-right hidden-xs showopacity"></i></a></li>
+					<li class="dropdown" id="">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Art<i class="chevron down icon"></i> <i class="paint brush icon pull-right hidden-xs showopacity"></i></a>
 						<ul class="dropdown-menu forAnimate" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
+							<li><a href="#arte" class="op-links">Characters<i class="child icon pull-right hidden-xs showopacity"></i></a></li>
+							<li><a href="#" class="op-links">Web<i class="desktop icon pull-right hidden-xs showopacity"></i></a></li>
+							<li><a href="#" class="op-links">Other<i class="cube icon pull-right hidden-xs showopacity"></i></a></li>
 						</ul>
 					</li>					
 				</ul>
@@ -49,8 +56,7 @@
 		</div>
 	</nav>
 
-	<!-- MODALES DE IMÁGENES-->
-		<!-- IMGS PALMIRAS -->
+	<!-- MODALES DE IMÁGENES
 			<div id="modal-one" class="iziModal pl_fachada">
 				<img src="img/palmiras_lib_1.png" alt=""/>
 			</div>
@@ -60,43 +66,19 @@
 			<div id="modal-three" class="iziModal pl_interior" >
 				<img src="img/palmiras_lib_2.png" alt="" />
 			</div>
-			<div id="modal-four" class="iziModal pl_interior" >
-				<img src="img/palmiras_lib_2_2.png" alt="" 
-				style="
-				    width: 40%;
-    				margin: 0 auto;" 	
-    			/>
-			</div>
-			<div id="modal-five" class="iziModal pl_interior" >
-				<img src="img/palmiras_lib_2_3.png" alt="" />
-			</div>
-			<div id="" class="iziModal pl_mapa" >
-				<img src="img/palmiras_lib_3.png" alt="" />
-			</div>
-		
-		<!-- IMGS MODELOS -->
 			<div id="Modal_modelos1" class="Modal_modelos">
 				<img src="img/ficha_francesa.png" alt=""/>
-			</div>
-			<div id="Modal_modelos2" class="Modal_modelos" >
-				<img src="img/ficha_inglesa.png" alt="" />
-			</div>
-			<div id="Modal_modelos3" class="Modal_modelos" >
-				<img src="img/ficha_irlandesa.png" alt="" />
-			</div>
-			<div id="Modal_modelos4" class="Modal_modelos" >
-				<img src="img/ficha_noruega.png" alt="" />
-			</div>
-			<div id="Modal_modelos5" class="Modal_modelos" >
-				<img src="img/ficha_americana1.png" alt="" />
-			</div>
-			<div id="Modal_modelos6" class="Modal_modelos" >
-				<img src="img/ficha_americana2.png" alt="" />
-			</div>
+			</div>-->
 
 	<div class="main container-fluid">
-		<div class="row" id="inicio">
-			<div class="container bg_inicio">
+		<div class="row bg_inicio" id="inicio">
+			
+		</div>
+		
+		<div class="row bg_profile" id="perfil">
+			<div class="container ">
+
+				SLDVJNDFK
 			<!-- 	<div id="carou_inicio" class="carousel slide" data-ride="carousel">
 
 				  <ol class="carousel-indicators">
@@ -114,6 +96,10 @@
 					</div>
 				</div>	 -->
 			</div>
+		</div>
+
+		<div class="row bg_inicio" id="arte">
+			
 		</div>
 	</div>
 
