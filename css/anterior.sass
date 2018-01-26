@@ -1,0 +1,261 @@
+@charset "utf-8"
+/*@media (min-width: 768px)*/
+/*@media (min-width: 992px)*/
+/*@media (min-width: 1200px)*/
+
+@import paleta
+
+/*---------------------------------------------------------RESET*/
+html, body
+	height: 100%
+body 
+	background: $blanco
+
+h1,h2,h3,h4,h5,h6,p,a
+	margin: 0
+	padding: 0
+a, a:hover, a:visited, a:active
+	text-decoration: none
+input:focus, 
+select:focus,
+textarea:focus,
+button:focus
+	outline: none
+
+/*------------------------------------------------------GENERALES*/
+.elem-hide
+	display: none
+.elem-show
+	display: initial
+
+=shadow($valShadow)
+	-webkit-box-shadow: $valShadow
+	-moz-box-shadow: $valShadow
+	box-shadow: $valShadow
+.shadow
+	+shadow(3px 0px 16px 0px rgba(0,0,0,0.5))
+		
+/*-------------------------------------------------------FUENTES */
+@font-face 
+	font-family: "AvenirNextLTPro_Demi"
+	src: url("../fonts/AvenirNextLTPro_Demi.otf")
+@font-face 
+	font-family: "AvenirNextLTPro_Bold"
+	src: url("../fonts/AvenirNextLTPro_Bold.otf")
+.typ_upper
+	text-transform: uppercase	
+.typ_cap
+	text-transform: capitalize		
+.typ_italic
+	font-style: italic	
+.typ_c_white
+	color: #fff	
+.typ_c_blue
+	color: #1a2a54
+
+%message-shared
+	border: 1px solid #ccc
+	padding: 10px
+	color: #333
+.msg
+	@extend %message-shared
+.success
+	@extend %message-shared
+	border-color: green
+.error
+	@extend %message-shared
+	border-color: red
+.warning
+	@extend %message-shared
+	border-color: yellow
+
+/*------------------------------------------------VIDEO*/
+#video-background
+	position: fixed
+	right: 0
+	bottom: 0
+	min-width: 100vw
+	min-height: 100vh
+	width: auto
+	height: auto
+	z-index: -100
+
+/*------------------------------------------------------NAVBAR*/
+=navAnim($anim)
+	-webkit-transition: $anim
+	-moz-transition:  $anim
+	-o-transition: $anim
+	transition:  $anim
+
+nav
+	background: $gris
+	font-family: 'AvenirNextLTPro_Demi'
+	li
+		color: $negro
+	a
+		color: $negro
+		font-size: 2.5vh
+		line-height: 3vh
+	i
+		font-size: 2vh
+
+nav.sidebar
+	+navAnim(margin 200ms ease-out)
+
+	.navbar
+		border-radius: 0px
+	.navbar-nav
+		.open
+			.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus
+				color: $blanco
+				background-color: transparent
+
+.main 
+	+navAnim(margin 200ms ease-out)	
+	padding: 0
+
+	.row
+		padding: 0px
+		margin: 0px
+
+nav:hover .forAnimate
+	opacity: 1
+section
+	padding-left: 15px
+
+@media (min-width: 768px)
+
+	/*---------------------------------------------- SOBRAS*/
+	.main
+		position: absolute
+		width: calc(100% - 40px)
+		margin-left: 40px
+		float: right
+
+	nav.sidebar:hover + .main
+		margin-left: 300px
+
+	nav.sidebar.navbar.sidebar>.container .navbar-brand, 
+	.navbar>.container-fluid .navbar-brand
+		margin-left: 0px
+
+	nav.sidebar 
+		width: 300px
+		height: 100%
+		margin-left: -160px
+		float: left
+		z-index: 8000
+		margin-bottom: 0px
+
+		.navbar-brand, nav.sidebar .navbar-header
+			text-align: center
+			width: 100%
+			margin: 0 0 2vh 0
+			height: auto
+		a
+			padding-right: 13px
+		li
+			width: 100%
+		li>a:hover,.active>a
+			background: rgba(0,0,0,0.5)!important
+			color: $blanco!important
+		.redes_sociales
+			height: auto
+			width: 100%
+			padding: 10px
+			text-align: center
+			color: $negro
+			margin: 2vh auto
+			// a
+			// 	color: $blanco
+			a:visited,a:hover,a:focus
+				text-decoration: none
+			a.fb:hover
+				color: $facebook
+			a.tw:hover
+				color: $twitter
+			a.gh:hover
+				color: $github
+			a.tb:hover
+				color: $tumblr
+			i.icon
+				font-size: 3vh
+				display: inline-block
+		.navbar-nav 
+			> li:first-child, > li
+				border: none
+			> li>a:hover
+				color: #333
+			.open>a
+				background: rgba(0,0,0,0.5)!important
+				color: $blanco!important
+			.open .dropdown-menu
+				position: static
+				float: none
+				width: auto
+				margin-top: 0
+				background-color: transparent
+				border: 0
+				-webkit-box-shadow: none
+				box-shadow: none
+		.navbar-collapse,.container-fluid
+			padding: 0 0px 0 0px
+
+	nav.sidebar:hover
+		margin-left: 0px
+
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a
+		color: #777
+
+	.forAnimate
+		opacity: 0
+
+@media (max-width: 768px)
+	.navbar-brand
+		height: auto
+		padding: 15px 15px
+		font-size: initial
+		line-height: inherit
+
+		>img
+			content: url('../img/loguito_n_m.png')
+			height: 8vh
+
+@media (min-width: 1330px)
+	.main
+		width: calc(100% - 300px)
+		margin-left: 300px
+	nav.sidebar
+		margin-left: 0px
+		float: left
+
+		.forAnimate
+			opacity: 1
+		.navbar-brand
+			>img
+				content: url('../img/loguito_n.png')
+
+/*-------------------------------------------------------PERFIL-*/
+.bg_inicio
+	height: 100vh
+
+/*-------------------------------------------------------PERFIL-*/
+
+.bg_profile
+	background: $blanco
+	height: 100vh
+
+/*-------------------------------------------------LANDSCAPE------*/
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape)
+	.land_4,.land_5,.land_6,.land_7,.land_8
+		float: left
+	.land_4
+		width: 33.33333333%
+	.land_5
+		width: 41.66666667%
+	.land_6 
+		width: 50%
+	.land_7
+		width: 58.33333333%
+	.land_8
+		width: 66.66666667%
