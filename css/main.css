@@ -6,7 +6,8 @@ html, body {
   height: 100%; }
 
 body {
-  background: #fcfcfc; }
+  background: #fcfcfc;
+  font-family: "Quicksand-Regular"; }
 
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
@@ -96,72 +97,83 @@ button:focus {
   font-family: "AvenirNextLTPro_Demi"; }
 
 /*------------------------------------------------------NAVBAR */
+.navbar-brand {
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 14vh;
+  height: 14vh;
+  text-align: center; }
+  .navbar-brand img {
+    margin: 0 auto;
+    height: -webkit-fill-available; }
+
+.navbar-collapse ul {
+  background: transparent;
+  text-align: center; }
+.navbar-collapse li {
+  background: transparent; }
+.navbar-collapse a {
+  background: transparent;
+  width: auto;
+  height: 14vh !important;
+  line-height: 14vh !important;
+  vertical-align: middle;
+  padding: 0px 10px !important;
+  font-size: 1.5vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333; }
+.navbar-collapse a:hover {
+  background: transparent !important;
+  color: #3d6e99; }
+.navbar-collapse a:hover:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  height: 10vh;
+  width: 50%;
+  border-bottom: 5px solid #5583b2;
+  background-color: transparent !important; }
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    padding: 9px 10px;
+    margin-top: 15px;
+    margin-right: 0;
+    margin-bottom: 8px; }
+
+  .navbar-collapse a {
+    width: auto;
+    height: auto !important;
+    line-height: normal !important;
+    padding: 2px 10px !important;
+    font-size: 6vw;
+    text-align: center; }
+  .navbar-collapse a:hover:after {
+    position: initial;
+    left: 0;
+    right: 0;
+    margin: auto;
+    content: "";
+    height: auto;
+    width: 100%;
+    border-bottom: none;
+    background-color: transparent !important; } }
 /*------------------------------------------------------INICIO */
 .bg_inicio {
-  height: 100vh; }
-  .bg_inicio .mylogo {
-    display: flex;
-    align-items: center; }
-  .bg_inicio .img_logo {
-    width: 30vw; }
-    .bg_inicio .img_logo img {
-      width: 28vw;
-      margin: 0 18vw; }
-  .bg_inicio .mydata {
-    display: flex;
-    align-items: center; }
-  .bg_inicio .info {
-    background: #535589;
-    color: #fcfcfc;
-    border-radius: 100px;
-    padding: 3vh 3vw;
-    width: 40vw;
-    display: block;
-    -webkit-box-shadow: 5px 8px 0px 0px #fcfcfc;
-    -moz-box-shadow: 5px 8px 0px 0px #fcfcfc;
-    box-shadow: 5px 8px 0px 0px #fcfcfc; }
-    .bg_inicio .info .social {
-      margin: 2vh 0;
-      float: left;
-      display: block; }
-      .bg_inicio .info .social label {
-        display: inline-block;
-        font-family: "Quicksand-Medium";
-        font-size: 2vh; }
-      .bg_inicio .info .social a {
-        display: inline-block;
-        font-size: 2.8vh;
-        color: #fcfcfc; }
-      .bg_inicio .info .social a:visited, .bg_inicio .info .social a:hover, .bg_inicio .info .social a:focus {
-        text-decoration: none; }
-      .bg_inicio .info .social a.fb:hover {
-        color: #4267b2; }
-      .bg_inicio .info .social a.tw:hover {
-        color: #2daae2; }
-      .bg_inicio .info .social a.gh:hover {
-        color: #222; }
-      .bg_inicio .info .social a.tb:hover {
-        color: #36465d; }
-    .bg_inicio .info .more {
-      background: #96b3d1;
-      color: #333;
-      display: block;
-      margin: 2vh 0;
-      float: right;
-      padding: 1vh 1vw;
-      font-size: 1.7vh;
-      border-radius: 100px;
-      cursor: pointer; }
-    .bg_inicio .info .more:hover {
-      background: #a9bcd0;
-      color: #fcfcfc; }
+  height: 100vh;
+  padding-top: 15vh;
+  background: #fcfcfc; }
 
 /*------------------------------------------------------PERFIL- */
 .bg_profile {
   background: #fcfcfc;
   height: 100vh; }
 
-/*-------------------------------------------------LANDSCAPE------ */
+/*---------------------------------------------LANDSCAPE------ */
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
   .land_4, .land_5, .land_6, .land_7, .land_8 {
     float: left; }
