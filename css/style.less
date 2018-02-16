@@ -54,13 +54,9 @@
 	  height: 100vh; 
 		}
 
-	.bg_cover{
-		background-size: cover;
-		}
 	.BG_img(@url){
-		background: url(@url);
+		background: url(@url) no-repeat center center;
 	}
-
 
 /*-------------------------------------------------------FUENTES */
 	@font-face {
@@ -210,19 +206,20 @@
 	@bg2: '../img/slide2.png' ;
 	@bg3: '../img/slide3.png' ;
 
+	.BG_imgSlider(@url){
+		background: url(@url) no-repeat bottom center;
+	}
+
 	.sliderImg1{
-		.BG_img(@bg1);
-		background:no-repeat bottom center;
+		.BG_imgSlider(@bg1);
 		background-size: 83%;
 	}
 	.sliderImg2{
-		.BG_img(@bg2);
-		background: no-repeat bottom center;
+		.BG_imgSlider(@bg2);
 		background-size: 83%;
 	}
 	.sliderImg3{
-		.BG_img(@bg3);
-		background: no-repeat bottom center;
+		.BG_imgSlider(@bg3);
 		background-size: 83%;
 	}
 

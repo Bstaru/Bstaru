@@ -59,9 +59,6 @@ button:focus {
 .FullH {
   height: 100vh;
 }
-.bg_cover {
-  background-size: cover;
-}
 /*-------------------------------------------------------FUENTES */
 
 @font-face {
@@ -200,18 +197,15 @@ button:focus {
   height: 70vh;
 }
 .sliderImg1 {
-  background: url('../img/slide1.png');
-  background: no-repeat bottom center;
+  background: url('../img/slide1.png') no-repeat bottom center;
   background-size: 83%;
 }
 .sliderImg2 {
-  background: url('../img/slide2.png');
-  background: no-repeat bottom center;
+  background: url('../img/slide2.png') no-repeat bottom center;
   background-size: 83%;
 }
 .sliderImg3 {
-  background: url('../img/slide3.png');
-  background: no-repeat bottom center;
+  background: url('../img/slide3.png') no-repeat bottom center;
   background-size: 83%;
 }
 @media (max-width: 768px) {
