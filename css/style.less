@@ -57,6 +57,9 @@
 	.bg_cover{
 		background-size: cover;
 		}
+	.BG_img(@url){
+		background: url(@url);
+	}
 
 
 /*-------------------------------------------------------FUENTES */
@@ -202,16 +205,24 @@
 	.slider_carou,.fadeCarou .item, .szItem{
 		height: 70vh;
 	}	
+
+	@bg1: '../img/slide1.png' ;
+	@bg2: '../img/slide2.png' ;
+	@bg3: '../img/slide3.png' ;
+
 	.sliderImg1{
-		background: url('../img/slide1.png') no-repeat bottom center;
+		.BG_img(@bg1);
+		background:no-repeat bottom center;
 		background-size: 83%;
 	}
 	.sliderImg2{
-		background: url('../img/slide2.png') no-repeat bottom center;
+		.BG_img(@bg2);
+		background: no-repeat bottom center;
 		background-size: 83%;
 	}
 	.sliderImg3{
-		background: url('../img/slide3.png') no-repeat bottom center;
+		.BG_img(@bg3);
+		background: no-repeat bottom center;
 		background-size: 83%;
 	}
 
