@@ -59,6 +59,9 @@ button:focus {
 .FullH {
   height: 100vh;
 }
+.bg_cover {
+  background-size: cover;
+}
 /*-------------------------------------------------------FUENTES */
 
 @font-face {
@@ -188,41 +191,28 @@ button:focus {
 /*------------------------------------------------------INICIO */
 
 .bg_inicio {
-  height: 100vh;
-  padding-top: 15vh;
+  height: auto;
+  padding-top: 12vh;
 }
-.slider_carou {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-  height: 100vh;
-  padding: 0;
-}
+.slider_carou,
 .fadeCarou .item,
 .szItem {
-  height: 85vh;
+  height: 70vh;
 }
 .sliderImg1 {
-  background: url('../img/slide1.png') no-repeat center center;
-  background-size: cover;
+  background: url('../img/slide1.png') no-repeat bottom center;
+  background-size: 83%;
 }
 .sliderImg2 {
-  background: url('../img/slide2.png') no-repeat center center;
-  background-size: cover;
+  background: url('../img/slide2.png') no-repeat bottom center;
+  background-size: 83%;
+}
+.sliderImg3 {
+  background: url('../img/slide3.png') no-repeat bottom center;
+  background-size: 83%;
 }
 @media (max-width: 768px) {
-  .sliderImg1 {
-    background: url('../img/slide1.png') no-repeat;
-    background-position: center 18%;
-    background-size: contain;
-  }
-  .sliderImg2 {
-    background: url('../img/slide2.png') no-repeat;
-    background-position: center 18%;
-    background-size: contain;
-  }
+  
 }
 /*------------------------------------------------------PERFIL- */
 
