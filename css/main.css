@@ -53,23 +53,29 @@ button:focus {
 
 /*-------------------------------------------------------FUENTES */
 @font-face {
-  font-family: "AvenirNextLTPro_Demi";
-  src: url("../fonts/AvenirNextLTPro_Demi.otf"); }
-@font-face {
-  font-family: "AvenirNextLTPro_Bold";
+  font-family: "Avenir-B";
   src: url("../fonts/AvenirNextLTPro_Bold.otf"); }
 @font-face {
-  font-family: "Quicksand-Bold";
+  font-family: "Avenir-D";
+  src: url("../fonts/AvenirNextLTPro_Demi.otf"); }
+@font-face {
+  font-family: "Avenir-R";
+  src: url("../fonts/AvenirNextLTPro_Regular.otf"); }
+@font-face {
+  font-family: "Gilroy-EB";
+  src: url("../fonts/Gilroy-ExtraBold.otf"); }
+@font-face {
+  font-family: "Gilroy-L";
+  src: url("../fonts/Gilroy-Light.otf"); }
+@font-face {
+  font-family: "Quicksand-B";
   src: url("../fonts/Quicksand-Bold.ttf"); }
 @font-face {
-  font-family: "Quicksand-Medium";
+  font-family: "Quicksand-M";
   src: url("../fonts/Quicksand-Medium.ttf"); }
 @font-face {
-  font-family: "Quicksand-Regular";
+  font-family: "Quicksand-R";
   src: url("../fonts/Quicksand-Regular.ttf"); }
-@font-face {
-  font-family: "Gilroy-ExtraBold";
-  src: url("../fonts/Gilroy-ExtraBold.otf"); }
 .typ_upper {
   text-transform: uppercase; }
 
@@ -86,81 +92,32 @@ button:focus {
   color: #1a2a54; }
 
 .titles {
-  font-family: "Quicksand-Bold";
-  font-weight: bold; }
+  font-family: "Gilroy-EB"; }
 
 .parr {
-  font-family: "Quicksand-Regular"; }
+  font-family: "Gilroy-L"; }
 
 .links {
-  font-family: "AvenirNextLTPro_Demi"; }
+  font-family: "Avenir-D"; }
+
+a:visited, a:hover, a:focus {
+  text-decoration: none; }
+
+a.fb:hover {
+  color: #4267b2; }
+
+a.tw:hover {
+  color: #2daae2; }
+
+a.gh:hover {
+  color: #222; }
+
+a.tb:hover {
+  color: #36465d; }
 
 /*------------------------------------------------------NAVBAR */
 /*------------------------------------------------------INICIO */
-.bg_inicio {
-  height: 100vh; }
-  .bg_inicio .mylogo {
-    display: flex;
-    align-items: center; }
-  .bg_inicio .img_logo {
-    width: 30vw; }
-    .bg_inicio .img_logo img {
-      width: 28vw;
-      margin: 0 18vw; }
-  .bg_inicio .mydata {
-    display: flex;
-    align-items: center; }
-  .bg_inicio .info {
-    background: #535589;
-    color: #fcfcfc;
-    border-radius: 100px;
-    padding: 3vh 3vw;
-    width: 40vw;
-    display: block;
-    -webkit-box-shadow: 5px 8px 0px 0px #fcfcfc;
-    -moz-box-shadow: 5px 8px 0px 0px #fcfcfc;
-    box-shadow: 5px 8px 0px 0px #fcfcfc; }
-    .bg_inicio .info .social {
-      margin: 2vh 0;
-      float: left;
-      display: block; }
-      .bg_inicio .info .social label {
-        display: inline-block;
-        font-family: "Quicksand-Medium";
-        font-size: 2vh; }
-      .bg_inicio .info .social a {
-        display: inline-block;
-        font-size: 2.8vh;
-        color: #fcfcfc; }
-      .bg_inicio .info .social a:visited, .bg_inicio .info .social a:hover, .bg_inicio .info .social a:focus {
-        text-decoration: none; }
-      .bg_inicio .info .social a.fb:hover {
-        color: #4267b2; }
-      .bg_inicio .info .social a.tw:hover {
-        color: #2daae2; }
-      .bg_inicio .info .social a.gh:hover {
-        color: #222; }
-      .bg_inicio .info .social a.tb:hover {
-        color: #36465d; }
-    .bg_inicio .info .more {
-      background: #96b3d1;
-      color: #333;
-      display: block;
-      margin: 2vh 0;
-      float: right;
-      padding: 1vh 1vw;
-      font-size: 1.7vh;
-      border-radius: 100px;
-      cursor: pointer; }
-    .bg_inicio .info .more:hover {
-      background: #a9bcd0;
-      color: #fcfcfc; }
-
 /*------------------------------------------------------PERFIL- */
-.bg_profile {
-  background: #fcfcfc;
-  height: 100vh; }
-
 /*-------------------------------------------------LANDSCAPE------ */
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
   .land_4, .land_5, .land_6, .land_7, .land_8 {

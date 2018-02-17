@@ -68,24 +68,32 @@ button:focus
 	height: 100vh
 
 /*-------------------------------------------------------FUENTES */
+
 @font-face 
-	font-family: "AvenirNextLTPro_Demi"
-	src: url("../fonts/AvenirNextLTPro_Demi.otf")
-@font-face 
-	font-family: "AvenirNextLTPro_Bold"
+	font-family: "Avenir-B"
 	src: url("../fonts/AvenirNextLTPro_Bold.otf")
 @font-face 
-	font-family: "Quicksand-Bold"
+	font-family: "Avenir-D"
+	src: url("../fonts/AvenirNextLTPro_Demi.otf")
+@font-face 
+	font-family: "Avenir-R"
+	src: url("../fonts/AvenirNextLTPro_Regular.otf")
+@font-face 
+	font-family: "Gilroy-EB"
+	src: url("../fonts/Gilroy-ExtraBold.otf")
+@font-face 
+	font-family: "Gilroy-L"
+	src: url("../fonts/Gilroy-Light.otf")
+@font-face 
+	font-family: "Quicksand-B"
 	src: url("../fonts/Quicksand-Bold.ttf")
 @font-face 
-	font-family: "Quicksand-Medium"
+	font-family: "Quicksand-M"
 	src: url("../fonts/Quicksand-Medium.ttf")
 @font-face 
-	font-family: "Quicksand-Regular"
+	font-family: "Quicksand-R"
 	src: url("../fonts/Quicksand-Regular.ttf")
-@font-face 
-	font-family: "Gilroy-ExtraBold"
-	src: url("../fonts/Gilroy-ExtraBold.otf")	
+	
 
 .typ_upper
 	text-transform: uppercase	
@@ -98,81 +106,31 @@ button:focus
 .typ_c_blue
 	color: #1a2a54
 .titles
-	font-family: "Quicksand-Bold"
-	font-weight: bold
+	font-family: "Gilroy-EB"
 .parr
-	font-family: "Quicksand-Regular"
+	font-family: "Gilroy-L"
+
 .links
-	font-family: "AvenirNextLTPro_Demi"
+	font-family: "Avenir-D"
+a:visited,a:hover,a:focus
+	text-decoration: none
+a.fb:hover
+	color: $facebook
+a.tw:hover
+	color: $twitter
+a.gh:hover
+	color: $github
+a.tb:hover
+	color: $tumblr
 
 /*------------------------------------------------------NAVBAR*/
 
+
 /*------------------------------------------------------INICIO*/
-.bg_inicio
-	height: 100vh
-	// background: $gris
 
-	.mylogo
-		display: flex
-		align-items: center
-	.img_logo
-		width: 30vw
-		img
-			width: 28vw
-			margin: 0 18vw
-	.mydata
-		display: flex
-		align-items: center
-	.info
-		background: $Morazul
-		color: $blanco
-		border-radius: 100px
-		padding: 3vh 3vw
-		width: 40vw
-		display: block
-		+shadow(5px 8px 0px 0px $blanco)
-		.social
-			margin: 2vh 0
-			float: left
-			display: block
-			label
-				display: inline-block
-				font-family: "Quicksand-Medium"
-				font-size: 2vh
-			a
-				display: inline-block
-				font-size: 2.8vh
-				color: $blanco
-
-			a:visited,a:hover,a:focus
-				text-decoration: none
-			a.fb:hover
-				color: $facebook
-			a.tw:hover
-				color: $twitter
-			a.gh:hover
-				color: $github
-			a.tb:hover
-				color: $tumblr
-		.more
-			background: #96b3d1
-			color: $negro
-			display: block
-			margin: 2vh 0
-			float: right
-			padding: 1vh 1vw
-			font-size: 1.7vh
-			border-radius: 100px
-			cursor: pointer
-		.more:hover
-			background: $gris
-			color: $blanco
 					
 /*------------------------------------------------------PERFIL-*/
 
-.bg_profile
-	background: $blanco
-	height: 100vh
 
 /*-------------------------------------------------LANDSCAPE------*/
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape)
