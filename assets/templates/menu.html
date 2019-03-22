@@ -1,0 +1,26 @@
+
+<div id="mySidenav" class="sidenav">
+	
+	<a href="javascript:void(0)" class="closebtn" onclick="minNav()"> <i class="mdi mdi-arrow-left-bold-hexagon-outline"></i> </a>
+	<a href="#">About Me</a>
+	<a href="#">Drawings</a>
+	<a href="#">Web stuff</a>
+	<a href="#">Contact</a>
+</div>
+
+<script>
+	var sta = 0;
+	function minNav() {
+		if (sta == 0) {
+			$('.sidenav').addClass('min');
+			$('.space').addClass('big');
+			sta = 1;
+		}
+		else{
+			$('.sidenav').removeClass('min');
+			$('.space').removeClass('big');
+			sta = 0;
+		}
+	}
+</script>
+

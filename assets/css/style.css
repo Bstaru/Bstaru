@@ -1,0 +1,567 @@
+@charset "utf-8";
+/* #region COLORES -------*/
+/*#endregion*/
+/* #region TIPOGRAFIA-----*/
+/*-------------MyriadPro----*/
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+}
+@font-face {
+  font-family: "MyriadPro-Bold";
+  src: url("../fonts/MyriadPro/MyriadPro-Bold.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Bold.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
+}
+@font-face {
+  font-family: "MyriadPro-BoldCond";
+  src: url("../fonts/MyriadPro/MyriadPro-BoldCond.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-BoldCond.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-BoldCond.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-BoldCond.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-BoldCond.svg#MyriadPro-BoldCond") format("svg");
+}
+@font-face {
+  font-family: "MyriadPro-BoldCondIt";
+  src: url("../fonts/MyriadPro/MyriadPro-BoldCondIt.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-BoldCondIt.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-BoldCondIt.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-BoldCondIt.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-BoldCondIt.svg#MyriadPro-BoldCondIt") format("svg");
+}
+@font-face {
+  font-family: "MyriadPro-BoldIt";
+  src: url("../fonts/MyriadPro/MyriadPro-BoldIt.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-BoldIt.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-BoldIt.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-BoldIt.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-BoldIt.svg#MyriadPro-BoldIt") format("svg");
+}
+@font-face {
+  font-family: "MyriadPro-Cond";
+  src: url("../fonts/MyriadPro/MyriadPro-Cond.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-Cond.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Cond.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Cond.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-Cond.svg#MyriadPro-Cond") format("svg");
+}
+@font-face {
+  font-family: "MyriadPro-CondIt";
+  src: url("../fonts/MyriadPro/MyriadPro-CondIt.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-CondIt.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-CondIt.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-CondIt.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-CondIt.svg#MyriadPro-CondIt") format("svg");
+}
+@font-face {
+  font-family: "MyriadPro-It";
+  src: url("../fonts/MyriadPro/MyriadPro-It.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-It.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-It.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-It.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-It.svg#MyriadPro-It") format("svg");
+}
+@font-face {
+  font-family: "MyriadPro-Semibold";
+  src: url("../fonts/MyriadPro/MyriadPro-Semibold.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-Semibold.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Semibold.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Semibold.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-Semibold.svg#MyriadPro-Semibold") format("svg");
+}
+@font-face {
+  font-family: "MyriadPro-SemiboldIt";
+  src: url("../fonts/MyriadPro/MyriadPro-SemiboldIt.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-SemiboldIt.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-SemiboldIt.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-SemiboldIt.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-SemiboldIt.svg#MyriadPro-SemiboldIt") format("svg");
+}
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: local("MyriadPro-Regular"), local("MyriadPro-Regular"), url(../fonts/MyriadPro/MyriadPro-Regular.otf) format("opentype");
+}
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: local("MyriadPro-Bold"), local("MyriadPro-Bold"), url(../fonts/MyriadPro/MyriadPro-Bold.otf) format("opentype");
+}
+@font-face {
+  font-family: 'MyriadPro-BoldCond';
+  src: local("MyriadPro-BoldCond"), local("MyriadPro-BoldCond"), url(../fonts/MyriadPro/MyriadPro-BoldCond.otf) format("opentype");
+}
+@font-face {
+  font-family: 'MyriadPro-BoldCondIt';
+  src: local("MyriadPro-BoldCondIt"), local("MyriadPro-BoldCondIt"), url(../fonts/MyriadPro/MyriadPro-BoldCondIt.otf) format("opentype");
+}
+@font-face {
+  font-family: 'MyriadPro-BoldIt';
+  src: local("MyriadPro-BoldIt"), local("MyriadPro-BoldIt"), url(../fonts/MyriadPro/MyriadPro-BoldIt.otf) format("opentype");
+}
+@font-face {
+  font-family: 'MyriadPro-Cond';
+  src: local("MyriadPro-Cond"), local("MyriadPro-Cond"), url(../fonts/MyriadPro/MyriadPro-Cond.otf) format("opentype");
+}
+@font-face {
+  font-family: 'MyriadPro-CondIt';
+  src: local("MyriadPro-CondIt"), local("MyriadPro-CondIt"), url(../fonts/MyriadPro/MyriadPro-CondIt.otf) format("opentype");
+}
+@font-face {
+  font-family: 'MyriadPro-It';
+  src: local("MyriadPro-It"), local("MyriadPro-It"), url(../fonts/MyriadPro/MyriadPro-It.otf) format("opentype");
+}
+@font-face {
+  font-family: 'MyriadPro-Semibold';
+  src: local("MyriadPro-Semibold"), local("MyriadPro-Semibold"), url(../fonts/MyriadPro/MyriadPro-Semibold.otf) format("opentype");
+}
+@font-face {
+  font-family: 'MyriadPro-SemiboldIt';
+  src: local("MyriadPro-SemiboldIt"), local("MyriadPro-SemiboldIt"), url(../fonts/MyriadPro/MyriadPro-SemiboldIt.otf) format("opentype");
+}
+/*generales*/
+.typ-center {
+  text-align: center;
+}
+.typ-upper {
+  text-transform: uppercase;
+}
+/*#endregion*/
+/* #region RESET----------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fff;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+@media (min-width: 1920px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/*#endregion*/
+/* #region FUNCIONES -----*/
+.cont_rel {
+  position: relative;
+}
+.elem_hide {
+  display: none!important;
+}
+.middle {
+  display: flex;
+  align-items: center;
+}
+.middle_Top {
+  display: flex;
+  align-items: top;
+}
+.noMiddle {
+  display: block;
+  align-items: normal;
+}
+/*#endregion*/
+/*#endregion*/
+.scroll {
+  overflow: scroll;
+}
+.scroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: white;
+}
+/*#endregion*/
+/*#endregion*/
+.IsLink {
+  cursor: pointer;
+  text-decoration: none;
+}
+.IsLink:hover {
+  text-decoration: underline;
+}
+.WithAnim {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@keyframes rotatingg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+/*#endregion*/
+/*#endregion*/
+/* #region INPUT-BTN------*/
+.input-t {
+  font-family: "MyriadPro-Regular";
+  font-size: 15pt;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.input-t span {
+  display: block;
+  font-size: 12pt;
+  color: #30529c;
+  font-family: "MyriadPro-Bold";
+}
+.input-t input {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 50px;
+  padding: 5px 10px;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid #30529c;
+}
+.input-t input:focus {
+  border: 2px solid #7ac143;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.input-t input:disabled {
+  background: #fff;
+  border: none;
+}
+.input-t textarea {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  min-width: 100%;
+  min-height: 100px;
+  max-height: 150px;
+  padding: 5px 10px;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid #30529c;
+}
+.input-t textarea:focus {
+  border: 2px solid #7ac143;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.input-t textarea:disabled {
+  background: #fff;
+  border: none;
+}
+.input-s {
+  font-family: "MyriadPro-Regular";
+  font-size: 15pt;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.input-s span {
+  display: block;
+  font-size: 12pt;
+  color: #30529c;
+  font-family: "MyriadPro-Bold";
+}
+.input-s select {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 50px;
+  padding: 5px 10px;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  border: 2px solid #30529c;
+}
+.input-s select:focus,
+.input-s select:active {
+  border: 2px solid #7ac143;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.input-s .bootstrap-select > .dropdown-toggle.bs-placeholder,
+.input-s .bootstrap-select > .dropdown-toggle.bs-placeholder:hover,
+.input-s .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+.input-s .bootstrap-select > .dropdown-toggle.bs-placeholder:active,
+.input-s button {
+  font-family: "MyriadPro-Regular";
+  font-size: 15pt;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100% !important;
+  height: 50px !important;
+  padding: 5px 10px !important;
+  margin: 0 auto 20px !important;
+  border-radius: 10px !important;
+  border: 2px solid #30529c !important;
+  outline: 0;
+}
+.input-s button.disabled {
+  font-family: "MyriadPro-Regular";
+  box-shadow: none;
+  border: 2px solid white !important;
+  outline: 0;
+}
+.input-s .bootstrap-select.bs-container .dropdown-menu {
+  border: 2px solid #7ac143;
+  -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.bootstrap-select.disabled,
+.bootstrap-select > .disabled {
+  cursor: auto;
+  background: #fff;
+  border: none !important;
+}
+.input-switch {
+  display: flex;
+  align-items: center;
+  /* The switch - the box around the slider */
+  /* Rounded sliders */
+}
+.input-switch p {
+  font-family: "MyriadPro-Regular";
+  font-size: 13pt;
+  display: inline-block;
+  width: inherit;
+  margin-right: 5px;
+}
+.input-switch .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0!important;
+}
+.input-switch .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.input-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.input-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.input-switch input:checked + .slider {
+  background-color: #7ac143;
+}
+.input-switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.input-switch input:focus + .slider {
+  box-shadow: 0 0 1px #7ac143;
+}
+.input-switch .slider.round {
+  border-radius: 34px;
+}
+.input-switch .slider.round:before {
+  border-radius: 50%;
+}
+/*---BOTONES------ -*/
+.cnt-btn button {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: MyriadPro-Bold;
+  font-size: 17px;
+  background: #30529c;
+  color: white;
+  border-radius: 2em;
+  min-width: 180px;
+  max-width: 350px;
+  padding: 6px;
+  border: 1px solid white;
+}
+.cnt-btn button.mdlbtn {
+  min-width: 100px;
+}
+.cnt-btn button:hover {
+  background: #7ac143;
+}
+.btn-b {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  min-width: 180px;
+  padding: 10px 40px;
+  border: none;
+  display: inline-block;
+  background: #7ac143;
+  text-align: center;
+  font: 16px MyriadPro-Bold;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+}
+.btn-b:hover,
+.btn-b:focus {
+  color: white;
+  background: #629d34;
+  outline: 0;
+}
+.btn-b.help {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.btn-b.help img {
+  width: 25px;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+.btn-b .minimin {
+  opacity: 0;
+  margin: 0 0 0 auto;
+  font-size: 20px;
+}
+.btn-edit {
+  background: #7ac143;
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 13pt;
+  cursor: pointer;
+}
+.btn-editP {
+  background: #43a1c1;
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 13pt;
+  cursor: pointer;
+}
+.btn-delete {
+  background: red;
+  color: white;
+  text-align: center;
+  border: none;
+  font-size: 13pt;
+  cursor: pointer;
+}
+/*#endregion*/
+/* #region NAVBAR -------*/
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #30529c;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: #fff;
+}
+.sidenav.min {
+  width: 70px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.space {
+  transition: margin-left 0.5s;
+  padding: 16px;
+  margin-left: 250px;
+}
+.space.big {
+  margin-left: 70px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/*#endregion*/
+.spn {
+  font-family: "MyriadPro-Bold";
+  text-transform: uppercase;
+  color: white;
+  padding: 5px;
+  border-radius: 2em;
+}
+.spn.proc {
+  background: green;
+}
+.spn.reas {
+  background: #d7c72a;
+}
+.spn.apro {
+  background: #5294bf;
+}
+.spn.canc {
+  background: red;
+}
+.spn.rech {
+  background: #9a1212;
+}
+.spn.decl {
+  background: gray;
+}

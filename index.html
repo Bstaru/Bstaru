@@ -1,77 +1,46 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>B★STARU</title>
+	<title>BStaru</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <meta name="description" content="Empresa de Grupo GarSa, Fernando García Sada"> -->
-	<link rel="icon" type="image/png" href="img/LOGO_MINI.png" />
+	<meta name="description" content="BStaru :D">
+	<link rel="icon" type="image/png" href="assets/img/mini-logoPA.png" sizes="32x32">
 
 	<!--CSS-->		
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="css/icon.css">
-		<link rel="stylesheet" type="text/css" href="css/animate.css">
-		<link rel="stylesheet" type="text/css" href="css/flag-icon.min.css">
-		<link rel="stylesheet" type="text/css" href="css/iziModal.min.css" />
-		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/lib/animations/animate.css">   	
+		<link rel="stylesheet" type="text/css" href="assets/icons/MaterialDesign/css/materialdesignicons.css">   	
 
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-</head>
-
-<body>
-	
-	<nav class="navbar navbar-fixed-top">
-	  <div class="container-fluid">
-	  	<div class="container">
-		  	<!-- Brand and toggle get grouped for better mobile display -->
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		      	<i class="content icon" style="color: #333; font-size: 4vh"></i>
-		      </button>
-		      <a class="navbar-brand" href="#">
-		      	<!-- <img src="img/loguito_n_m.png" class="img-responsive"> -->
-		      </a>
-		    </div>
-
-		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li><a href="#" class="links">About me</a></li>
-		        <li><a href="#" class="links">My work</a></li>	  
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  	</div>
-	   
-	  </div><!-- /.container-fluid -->
-	</nav>
-
-	<div class="container-fluid">
-		<div class="row bg_inicio" id="Resumen">
-			<div class="slider_carou">
-				<div class="fadeCarou">
-					<div id="" class=" item szItem sliderImg1"></div>
-				    <div id="" class=" item szItem sliderImg2"></div> 
-				    <div id="" class=" item szItem sliderImg3"></div> 
-				</div>				
-			</div>
-		</div>
-		<div class="row">
-			<div class="container bg_profile">
-				<h2 class="titles">About me</h2>
-			</div>
-		</div>
-		
-	</div>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
 	<!--JS-->
-		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.js"></script>
-		<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-		<script type="text/javascript" src="js/iziModal.min.js"></script> 
-		<script type="text/javascript" src="slick/slick.min.js"></script>
-		<script type="text/javascript" src="js/scroll.js"></script>
-		<script type="text/javascript" src="js/animations.js"></script>
+		<script type="text/javascript" src="assets/lib/jQuery/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="assets/lib/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/lib/Mask/src/jquery.mask.js"></script>
+		<script type="text/javascript" src="assets/lib/animations/animations.js"></script>
+		<script type="text/javascript" src="assets/js/funciones.js"></script>
+		<script type="text/javascript" src="assets/js/services/localstorage.js"></script>
+
+		<script type="text/javascript">
+			//INCLUIR UN ARCHIVO HTML DENTRO DEL HTML
+			$(function () {
+				var includes = $('[data-include]');
+				jQuery.each(includes, function () {
+					var file = 'assets/templates/' + $(this).data('include') + '.html';
+					$(this).load(file);
+				});
+			});
+		</script>
+</head>
+
+<body class="">	
+	<div id="menu" data-include="menu"></div>
+	<div id="space" class="space">
+		<h2>Sidenav Push Example</h2>
+		<p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
+		<span style="font-size:30px;cursor:pointer">&#9776; open</span>
+	</div>
 </body>
 
 </html>

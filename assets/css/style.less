@@ -1,0 +1,489 @@
+@charset "utf-8";
+
+@import "colors";
+@import "fonts";
+
+/* #region RESET----------*/
+	h1,h2,h3,h4,h5,h6,
+	p,a{
+		margin: 0;
+		padding: 0;
+	}
+	a,
+	a:hover,
+	a:visited,
+	a:active{
+		text-decoration: none;
+		}
+	ul,ol{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background: #fff;
+		}
+	input:focus,
+	select:focus,
+	textarea:focus,
+	button:focus {
+	    outline: none;
+		}
+	@media (min-width: 1920px) {
+	  .container {
+	    width: 95%;
+	  }
+	}
+	@media (max-width:  992px) {
+	  .container {
+	    padding-right: 0px;
+	    padding-left: 0px;
+	    margin-right: auto;
+	    margin-left: auto;
+	  }
+	}
+/*#endregion*/ 
+
+/* #region FUNCIONES -----*/
+	.cont_rel{position: relative;}
+	.elem_hide{display: none!important;}
+	.square(@size){
+		height: @size;
+		width: @size;
+	}
+
+	// #region contenidos en medio
+		.middle{
+			display: flex;
+			align-items: center;
+			}
+		.middle_Top{
+			display: flex;
+			align-items: top;
+			}
+		.noMiddle{
+			display: block;
+			align-items: normal;
+			}
+	/*#endregion*/ 
+	// #region IMG-FONDO
+		.bg_img(@url) {
+			background: url(@url) no-repeat center center;
+			background-size: cover;
+			}
+		.bg_img_C(@url) {
+			background: url(@url) no-repeat right center;
+			background-size: contain;
+			}	
+		.bg_img_Top(@url) {
+			background: url(@url) no-repeat top center;
+			background-size: cover;
+			}
+	/*#endregion*/		
+	// #region SCROLL
+		.scroll{
+			overflow: scroll;
+		}
+		.scroll::-webkit-scrollbar-track{
+			border-radius: 10px;
+			}
+		.scroll::-webkit-scrollbar{
+			width: 10px;
+			}
+		.scroll::-webkit-scrollbar-thumb{
+			border-radius: 10px;
+			background-color: @scroll;
+			}
+  /*#endregion*/
+	// #region SOMBRAS
+		.shadow(@VARS){		
+			-webkit-box-shadow: @VARS;
+			-moz-box-shadow: @VARS;
+			box-shadow: @VARS;
+		}
+		.InnerShadow(@VARS){		
+			-webkit-box-shadow: inset @VARS;
+			-moz-box-shadow: inset @VARS;
+			box-shadow:inset  @VARS;
+		}
+	//.shadow(0px 0px 10px 0px rgba(82, 82, 82, 0.5) );
+	/*#endregion*/
+
+	.IsLink{
+		cursor: pointer;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+		}
+	.poss(@pos,@t,@r,@b,@l){
+			position: @pos;
+			top: @t;
+			right: @r;
+			bottom: @b;
+			left: @l;
+			}
+	
+	// #region ANIMATIONS
+		.WithAnim{
+			-webkit-transition: all 0.5s ease;
+			   -moz-transition: all 0.5s ease;
+				 -o-transition: all 0.5s ease;
+				-ms-transition: all 0.5s ease;
+				    transition: all 0.5s ease;
+			}
+		.WithAnimS(@segs){
+			-webkit-transition: all @segs ease;
+			   -moz-transition: all @segs ease;
+				 -o-transition: all @segs ease;
+				-ms-transition: all @segs ease;
+				    transition: all @segs ease;
+			}
+		@keyframes rotatingg {
+		  from {
+		    transform: rotate(0deg);
+		  	}
+		  to {
+		    transform: rotate(180deg);
+		  	}
+		}
+	/*#endregion*/
+
+	/*#endregion*/
+
+/* #region INPUT-BTN------*/
+
+	.input-t{
+		font-family: "MyriadPro-Regular";
+		font-size: 15pt;
+		span{
+			display: block;
+			font-size: 12pt;
+			color: @purble;
+			font-family: "MyriadPro-Bold";
+		}
+		.WithAnim;
+		input{
+			.WithAnim;
+			width: 100%;
+			height: 50px;
+			padding: 5px 10px;
+			margin: 0 auto 20px;
+			border-radius: 10px;
+			border: 2px solid @purble;
+			&:focus{
+				border: 2px solid @green;
+				.shadow(0px 3px 6px 0px rgba(0, 0, 0, 0.16) );
+			}
+			&:disabled{
+				background: #fff;
+    			border: none;
+			}
+		}
+		textarea{
+			.WithAnim;
+			min-width: 100%;
+			min-height: 100px;
+			max-height: 150px;
+			padding: 5px 10px;
+			margin: 0 auto 20px;
+			border-radius: 10px;
+			border: 2px solid @purble;
+			&:focus{
+				border: 2px solid @green;
+				.shadow(0px 3px 6px 0px rgba(0, 0, 0, 0.16) );
+			}
+			&:disabled{
+				background: #fff;
+    			border: none;
+			}
+		}
+	}
+	.input-s{
+		font-family: "MyriadPro-Regular";
+		font-size: 15pt;
+		span{
+			display: block;
+			font-size: 12pt;
+			color: @purble;
+			font-family: "MyriadPro-Bold";
+		}
+		.WithAnim;
+		select{
+			.WithAnim;
+			width: 100%;
+			height: 50px;
+			padding: 5px 10px;
+			margin: 0 auto 20px;
+			border-radius: 10px;
+			border: 2px solid @purble;
+			&:focus,&:active{
+				border: 2px solid @green;
+				.shadow(0px 3px 6px 0px rgba(0, 0, 0, 0.16) );
+			}
+		}
+		.bootstrap-select > .dropdown-toggle.bs-placeholder, 
+		.bootstrap-select > .dropdown-toggle.bs-placeholder:hover,
+		.bootstrap-select > .dropdown-toggle.bs-placeholder:focus, 
+		.bootstrap-select > .dropdown-toggle.bs-placeholder:active,
+		button{
+			font-family: "MyriadPro-Regular";
+			font-size: 15pt;
+			.WithAnim;
+			width: 100% !important;
+			height: 50px !important;
+			padding: 5px 10px !important;
+			margin: 0 auto 20px !important;
+			border-radius: 10px !important;
+			border: 2px solid @purble !important;
+			outline: 0;
+		}
+		button.disabled{
+			font-family: "MyriadPro-Regular";
+			box-shadow:none;
+			border: 2px solid white !important;
+			outline: 0;
+		}
+		.bootstrap-select.bs-container .dropdown-menu{
+			border: 2px solid @green;
+			.shadow(0px 3px 6px 0px rgba(0, 0, 0, 0.16) );
+		}
+		
+	}	
+	.bootstrap-select.disabled, .bootstrap-select > .disabled{
+		cursor: auto;
+		background: #fff;
+		border: none !important;
+	}	
+
+	.input-switch{
+		.middle;
+		p{
+			font-family: "MyriadPro-Regular";
+			font-size: 13pt;
+			display: inline-block;
+			width: inherit;
+			margin-right: 5px;
+		}
+		/* The switch - the box around the slider */
+		.switch {
+		  	position: relative;
+		  	display: inline-block;
+		  	width: 60px;
+		  	height: 34px;
+		  	margin: 0!important;
+			input {
+			  opacity: 0;
+			  width: 0;
+			  height: 0;
+			}
+		}
+		.slider {
+		  	position: absolute;
+		  	cursor: pointer;
+		  	top: 0;
+		  	left: 0;
+		  	right: 0;
+		  	bottom: 0;
+		  	background-color: #ccc;
+		  	-webkit-transition: .4s;
+		  	transition: .4s;
+			&:before {
+			  position: absolute;
+			  content: "";
+			  height: 26px;
+			  width: 26px;
+			  left: 4px;
+			  bottom: 4px;
+			  background-color: white;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+		}
+		input{
+			&:checked + .slider {
+			  background-color: @green;
+			  &:before{
+			  	-webkit-transform: translateX(26px);
+		  		-ms-transform: translateX(26px);
+		  		transform: translateX(26px);
+			  }
+			}
+			&:focus + .slider {
+			  box-shadow: 0 0 1px @green;
+			}
+		}
+		/* Rounded sliders */
+		.slider.round {
+		  border-radius: 34px;
+		  &:before{
+		  	border-radius: 50%;
+		  }
+		}
+	}
+
+	/*---BOTONES------ -*/	
+	.cnt-btn{
+		button{
+			.WithAnimS(0.3s);
+			cursor: pointer;
+			font-family: MyriadPro-Bold;
+			font-size: 17px;
+			background: @purble;
+			color: white;
+			border-radius:2em;
+			min-width: 180px;
+		    max-width: 350px;
+		    padding: 6px;
+		    border: 1px solid white;
+		    &.mdlbtn{
+		    	min-width: 100px;
+		    }
+			&:hover{
+				background: @green;
+			}
+
+		}
+	}
+	.btn-b{
+		.WithAnim;
+		min-width:180px;
+		padding: 10px 40px;
+		border: none;
+		display: inline-block;
+		background: @green;
+		.typ-center;
+		font:16px MyriadPro-Bold;
+		color: #fff;
+		letter-spacing: 2px;
+		.typ-upper;
+		.shadow(0px 2px 4px 0px rgba(0, 0, 0, 0.16) );
+
+		&:hover, &:focus{
+			color: white;
+			background: darken(@green, 10%);
+			outline: 0;
+		}
+
+		&.help{
+			text-align:center;
+			.middle;
+			img{
+				width: 25px;
+				margin-right: 10px;
+				margin-left: 0px;
+			}
+		}
+		.minimin{
+			opacity: 0;
+			margin:0 0 0 auto;
+			font-size: 20px;
+		}
+	}	
+	.btn-edit{
+		background: @green;
+		color: white;
+		text-align: center;
+		border:none;
+		font-size: 13pt;
+		cursor: pointer;
+	}
+	.btn-editP{
+		background: @blue;
+		color: white;
+		text-align: center;
+		border:none;
+		font-size: 13pt;
+		cursor: pointer;
+	}
+	.btn-delete{
+		background: red;
+		color: white;
+		text-align: center;
+		border:none;
+		font-size: 13pt;
+		cursor: pointer;
+	}
+/*#endregion*/
+
+/* #region NAVBAR -------*/
+
+	.sidenav {
+		height: 100%;
+		width: 250px;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: @purble;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		color: #fff;
+
+		&.min{
+			width: 70px;
+		}
+
+		a {
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 25px;
+			color: #fff;
+			display: block;
+			transition: 0.3s;
+
+			&:hover{
+				color: #f1f1f1;
+			}
+		}
+
+		.closebtn {
+			position: absolute;
+			top: 0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+
+	}
+	.space {
+		transition: margin-left .5s;
+		padding: 16px;
+		margin-left: 250px;
+
+		&.big{
+			margin-left: 70px;
+		}
+
+	}
+	@media screen and (max-height: 450px) {
+		.sidenav {
+			padding-top: 15px;
+		}
+
+		.sidenav a {
+			font-size: 18px;
+		}
+	}
+
+/*#endregion*/
+
+
+// ---------------------------------------------------------TABLAS
+
+	.spn{
+		font-family: "MyriadPro-Bold";
+		text-transform: uppercase;
+		color: white;
+	    // background: green;
+	    padding: 5px;
+	    border-radius: 2em;
+
+	    &.proc{background: green;}
+	    &.reas{background: #d7c72a;}
+	    &.apro{background: #5294bf;}
+	    &.canc{background: red;}
+	    &.rech{background: #9a1212;}
+	    &.decl{background: gray;}
+	}
