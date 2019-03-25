@@ -91,53 +91,6 @@
   text-transform: uppercase;
 }
 /*#endregion*/
-/* #region RESET----------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-  margin: 0;
-  padding: 0;
-}
-a,
-a:hover,
-a:visited,
-a:active {
-  text-decoration: none;
-}
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-body {
-  background: #fff;
-}
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-}
-@media (min-width: 1920px) {
-  .container {
-    width: 95%;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-/*#endregion*/
 /* #region FUNCIONES -----*/
 .cont_rel {
   position: relative;
@@ -197,6 +150,53 @@ button:focus {
   }
 }
 /*#endregion*/
+/*#endregion*/
+/* #region RESET----------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fff;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+@media (min-width: 1920px) {
+  .container {
+    width: 95%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 /*#endregion*/
 /* #region INPUT-BTN------*/
 .input-t {
@@ -519,7 +519,7 @@ button:focus {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 10px;
   font-size: 36px;
   margin-left: 50px;
 }
@@ -539,29 +539,17 @@ button:focus {
     font-size: 18px;
   }
 }
+.girar {
+  animation-duration: 0.5s;
+  animation-name: rotatingg;
+  animation-fill-mode: forwards;
+}
+@keyframes rotatingg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
 /*#endregion*/
-.spn {
-  font-family: "MyriadPro-Bold";
-  text-transform: uppercase;
-  color: white;
-  padding: 5px;
-  border-radius: 2em;
-}
-.spn.proc {
-  background: green;
-}
-.spn.reas {
-  background: #d7c72a;
-}
-.spn.apro {
-  background: #5294bf;
-}
-.spn.canc {
-  background: red;
-}
-.spn.rech {
-  background: #9a1212;
-}
-.spn.decl {
-  background: gray;
-}

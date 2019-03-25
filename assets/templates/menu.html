@@ -1,10 +1,15 @@
 
-<div id="mySidenav" class="sidenav">
-	
-	<a href="javascript:void(0)" class="closebtn" onclick="minNav()"> <i class="mdi mdi-arrow-left-bold-hexagon-outline"></i> </a>
-	<a href="#">About Me</a>
-	<a href="#">Drawings</a>
-	<a href="#">Web stuff</a>
+<div id="mySidenav" class="sidenav">	
+	<a href="javascript:void(0)" class="closebtn" onclick="minNav()"> 
+		<div class="IcoArrow">
+			<i class="mdi mdi-arrow-left-bold-hexagon-outline"></i> 
+		</div>
+		
+	</a>
+
+	<a href="#"> <i class="mdi mdi-human-greeting"></i> About Me</a>
+	<a href="#"> <i class="mdi mdi-lead-pencil"></i> Drawings</a>
+	<a href="#"> <i class="mdi mdi-responsive"></i> Web stuff</a>
 	<a href="#">Contact</a>
 </div>
 
@@ -14,11 +19,14 @@
 		if (sta == 0) {
 			$('.sidenav').addClass('min');
 			$('.space').addClass('big');
+			$('.IcoArrow').addClass('girar');
 			sta = 1;
 		}
+		
 		else{
 			$('.sidenav').removeClass('min');
 			$('.space').removeClass('big');
+			$('.IcoArrow').removeClass('girar');
 			sta = 0;
 		}
 	}
