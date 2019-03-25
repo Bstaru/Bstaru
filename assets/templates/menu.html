@@ -7,10 +7,23 @@
 		
 	</a>
 
-	<a href="#"> <i class="mdi mdi-human-greeting"></i> About Me</a>
-	<a href="#"> <i class="mdi mdi-lead-pencil"></i> Drawings</a>
-	<a href="#"> <i class="mdi mdi-responsive"></i> Web stuff</a>
-	<a href="#">Contact</a>
+	<a class="opt" href="#"> 
+		<i class="mdi mdi-human-greeting"></i> 
+		<span>About me</span>
+	</a>
+	<a class="opt" href="#"> 
+		<i class="mdi mdi-lead-pencil"></i> 
+		<span>Drawings</span> 
+	</a>
+	<a class="opt" href="#"> 
+		<i class="mdi mdi-responsive"></i> 
+		<span>Web stuff</span> 
+	</a>
+	<a class="opt" href="#"> 
+		<i class="mdi mdi-gmail"></i>
+		<span>Contact</span> 
+		<div class="mini">Contact</div> 
+	</a>
 </div>
 
 <script>
@@ -20,6 +33,8 @@
 			$('.sidenav').addClass('min');
 			$('.space').addClass('big');
 			$('.IcoArrow').addClass('girar');
+			$('.opt').find('span').addClass('elem_hide');
+
 			sta = 1;
 		}
 		
@@ -27,6 +42,12 @@
 			$('.sidenav').removeClass('min');
 			$('.space').removeClass('big');
 			$('.IcoArrow').removeClass('girar');
+
+			setTimeout(function () {
+				$('.opt').find('span').removeClass('elem_hide');	
+			}, 300);
+			
+
 			sta = 0;
 		}
 	}

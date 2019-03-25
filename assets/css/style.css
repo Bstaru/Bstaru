@@ -506,15 +506,29 @@ button:focus {
   width: 70px;
 }
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 20px;
   text-decoration: none;
   font-size: 25px;
   color: #fff;
   display: block;
   transition: 0.3s;
+  position: relative;
 }
 .sidenav a:hover {
   color: #f1f1f1;
+}
+.sidenav a.opt i {
+  margin-right: 20px;
+}
+.sidenav a.opt span {
+  margin: 0;
+}
+.sidenav a.opt .mini {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  padding: 10px;
+  background: #30529c;
 }
 .sidenav .closebtn {
   position: absolute;
