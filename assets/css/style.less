@@ -302,21 +302,29 @@
 
 /* #region NAVBAR -------*/
 
-	.sidenav {
-		height: 100%;
-		width: 250px;
-		position: fixed;
-		z-index: 1;
-		top: 0;
-		left: 0;
-		background-color: @purble;
-		overflow-x: hidden;
+	.fixed-left{
+			z-index: 50;
+			position: fixed;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			background: @purble;
+	} 	
+	.navbar {
+		display: inline;
+    padding: 0;
+	}
+	.sidenav {		
 		transition: 0.5s;
 		padding-top: 60px;
-		color: #fff;
+		color: #fff;		
 
-		&.min{
-			width: 70px;
+		.nbs{		
+			transition: 0.5s;	
+			width: 250px;
+			&.min{
+				width: 70px;
+			}
 		}
 
 		a {
@@ -326,30 +334,65 @@
 			color: #fff;
 			display: block;
 			transition: 0.3s;
-			position: relative;
-
 			&:hover{
 				color: #f1f1f1;
-			}
-			&.opt{
-				i{
-					margin-right: 20px;
-				}
-				span{
-					margin: 0;
-				}	
-				.mini{
-					position: absolute;
-					top: 0;
-					right: -20px;
-					padding: 10px;
-					background: @purble;
-				}
-			}
-
-			
+			}		
 		}
 
+		.nb-icon{
+			display: inline-block;
+			position: inherit;
+			z-index: 30;
+			background: @purble;
+			height: inherit;        
+			cursor: pointer;
+			padding: 8px 8px 8px 20px;
+		}
+		.nb-sub{			
+			.WithAnimS(0.3s);
+			display: inline-block;
+			position: absolute;
+			z-index: 10;
+			top: 0;
+			right: 5px;
+			color: #fff;
+			width: 250px;
+			height: auto;
+			background: @blue;
+			border-radius: 0 1em 1em 0;
+			opacity: 0;
+			text-align: center;			
+		}
+		.nb-item{
+			background: @purble;
+			cursor: pointer;
+			display: block;
+			position: relative;
+			z-index: 20;			
+			text-decoration: none;
+			font-size: 25px;
+			color: #fff;
+			transition: 0.3s;
+
+			i{ margin-right: 20px; 	}
+			span{
+				margin: 0;
+				display: inline-block;
+				font-family: "AvenirNext-DemiBold";
+				transition: 0.5s;				
+			}	
+			&:hover {
+					.WithAnimS(0.3s);
+					.nb-sub {
+						top: 0;
+						right: -250px;
+						color: #fff;
+						width: 250px;
+						.shadow(0px 0px 10px 0px rgba(82, 82, 82, 0.5) );
+						opacity: 1;
+					}
+			}		
+		}			
 		.closebtn {
 			position: absolute;
 			top: 0;
@@ -357,17 +400,6 @@
 			font-size: 36px;
 			margin-left: 50px;
 		}
-
-	}
-	.space {
-		transition: margin-left .5s;
-		padding: 16px;
-		margin-left: 250px;
-
-		&.big{
-			margin-left: 70px;
-		}
-
 	}
 	@media screen and (max-height: 450px) {
 		.sidenav {
@@ -385,12 +417,23 @@
 		animation-fill-mode: forwards;
 	}
 	@keyframes rotatingg {
-		  from {
-		    transform: rotate(0deg);
-		  	}
-		  to {
-		    transform: rotate(-180deg);
-		  	}
+		from {
+			transform: rotate(0deg);
+			}
+		to {
+			transform: rotate(-180deg);
+			}
+	}
+		
+	.space {
+		transition: padding-left .5s;
+		padding: 16px;
+		padding-left: 260px;
+		height: 100vh;
+		// background: @gray;
+		&.big{
+			padding-left: 80px;
 		}
 
+	}
 /*#endregion*/

@@ -2,86 +2,21 @@
 /* #region COLORES -------*/
 /*#endregion*/
 /* #region TIPOGRAFIA-----*/
-/*-------------MyriadPro----*/
 @font-face {
-  font-family: "MyriadPro-Regular";
-  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-family: "AvenirNext-Regular";
+  src: url("../fonts/AvenirNext/AvenirNext-Regular.ttf");
 }
 @font-face {
-  font-family: "MyriadPro-Bold";
-  src: url("../fonts/MyriadPro/MyriadPro-Bold.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Bold.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-Bold.svg#MyriadPro-Bold") format("svg");
+  font-family: "AvenirNext-Bold";
+  src: url("../fonts/AvenirNext/AvenirNext-Bold.ttf");
 }
 @font-face {
-  font-family: "MyriadPro-BoldCond";
-  src: url("../fonts/MyriadPro/MyriadPro-BoldCond.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-BoldCond.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-BoldCond.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-BoldCond.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-BoldCond.svg#MyriadPro-BoldCond") format("svg");
+  font-family: "AvenirNext-DemiBold";
+  src: url("../fonts/AvenirNext/AvenirNext-DemiBold.ttf");
 }
 @font-face {
-  font-family: "MyriadPro-BoldCondIt";
-  src: url("../fonts/MyriadPro/MyriadPro-BoldCondIt.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-BoldCondIt.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-BoldCondIt.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-BoldCondIt.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-BoldCondIt.svg#MyriadPro-BoldCondIt") format("svg");
-}
-@font-face {
-  font-family: "MyriadPro-BoldIt";
-  src: url("../fonts/MyriadPro/MyriadPro-BoldIt.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-BoldIt.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-BoldIt.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-BoldIt.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-BoldIt.svg#MyriadPro-BoldIt") format("svg");
-}
-@font-face {
-  font-family: "MyriadPro-Cond";
-  src: url("../fonts/MyriadPro/MyriadPro-Cond.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-Cond.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Cond.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Cond.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-Cond.svg#MyriadPro-Cond") format("svg");
-}
-@font-face {
-  font-family: "MyriadPro-CondIt";
-  src: url("../fonts/MyriadPro/MyriadPro-CondIt.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-CondIt.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-CondIt.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-CondIt.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-CondIt.svg#MyriadPro-CondIt") format("svg");
-}
-@font-face {
-  font-family: "MyriadPro-It";
-  src: url("../fonts/MyriadPro/MyriadPro-It.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-It.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-It.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-It.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-It.svg#MyriadPro-It") format("svg");
-}
-@font-face {
-  font-family: "MyriadPro-Semibold";
-  src: url("../fonts/MyriadPro/MyriadPro-Semibold.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-Semibold.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Semibold.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Semibold.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-Semibold.svg#MyriadPro-Semibold") format("svg");
-}
-@font-face {
-  font-family: "MyriadPro-SemiboldIt";
-  src: url("../fonts/MyriadPro/MyriadPro-SemiboldIt.eot?") format("eot"), url("../fonts/MyriadPro/MyriadPro-SemiboldIt.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-SemiboldIt.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-SemiboldIt.ttf") format("truetype"), url("../fonts/MyriadPro/MyriadPro-SemiboldIt.svg#MyriadPro-SemiboldIt") format("svg");
-}
-@font-face {
-  font-family: 'MyriadPro-Regular';
-  src: local("MyriadPro-Regular"), local("MyriadPro-Regular"), url(../fonts/MyriadPro/MyriadPro-Regular.otf) format("opentype");
-}
-@font-face {
-  font-family: 'MyriadPro-Bold';
-  src: local("MyriadPro-Bold"), local("MyriadPro-Bold"), url(../fonts/MyriadPro/MyriadPro-Bold.otf) format("opentype");
-}
-@font-face {
-  font-family: 'MyriadPro-BoldCond';
-  src: local("MyriadPro-BoldCond"), local("MyriadPro-BoldCond"), url(../fonts/MyriadPro/MyriadPro-BoldCond.otf) format("opentype");
-}
-@font-face {
-  font-family: 'MyriadPro-BoldCondIt';
-  src: local("MyriadPro-BoldCondIt"), local("MyriadPro-BoldCondIt"), url(../fonts/MyriadPro/MyriadPro-BoldCondIt.otf) format("opentype");
-}
-@font-face {
-  font-family: 'MyriadPro-BoldIt';
-  src: local("MyriadPro-BoldIt"), local("MyriadPro-BoldIt"), url(../fonts/MyriadPro/MyriadPro-BoldIt.otf) format("opentype");
-}
-@font-face {
-  font-family: 'MyriadPro-Cond';
-  src: local("MyriadPro-Cond"), local("MyriadPro-Cond"), url(../fonts/MyriadPro/MyriadPro-Cond.otf) format("opentype");
-}
-@font-face {
-  font-family: 'MyriadPro-CondIt';
-  src: local("MyriadPro-CondIt"), local("MyriadPro-CondIt"), url(../fonts/MyriadPro/MyriadPro-CondIt.otf) format("opentype");
-}
-@font-face {
-  font-family: 'MyriadPro-It';
-  src: local("MyriadPro-It"), local("MyriadPro-It"), url(../fonts/MyriadPro/MyriadPro-It.otf) format("opentype");
-}
-@font-face {
-  font-family: 'MyriadPro-Semibold';
-  src: local("MyriadPro-Semibold"), local("MyriadPro-Semibold"), url(../fonts/MyriadPro/MyriadPro-Semibold.otf) format("opentype");
-}
-@font-face {
-  font-family: 'MyriadPro-SemiboldIt';
-  src: local("MyriadPro-SemiboldIt"), local("MyriadPro-SemiboldIt"), url(../fonts/MyriadPro/MyriadPro-SemiboldIt.otf) format("opentype");
+  font-family: "AvenirNext-Medium";
+  src: url("../fonts/AvenirNext/AvenirNext-Medium.ttf");
 }
 /*generales*/
 .typ-center {
@@ -489,20 +424,28 @@ button:focus {
 }
 /*#endregion*/
 /* #region NAVBAR -------*/
-.sidenav {
-  height: 100%;
-  width: 250px;
+.fixed-left {
+  z-index: 50;
   position: fixed;
-  z-index: 1;
-  top: 0;
   left: 0;
-  background-color: #30529c;
-  overflow-x: hidden;
+  top: 0;
+  bottom: 0;
+  background: #30529c;
+}
+.navbar {
+  display: inline;
+  padding: 0;
+}
+.sidenav {
   transition: 0.5s;
   padding-top: 60px;
   color: #fff;
 }
-.sidenav.min {
+.sidenav .nbs {
+  transition: 0.5s;
+  width: 250px;
+}
+.sidenav .nbs.min {
   width: 70px;
 }
 .sidenav a {
@@ -512,23 +455,74 @@ button:focus {
   color: #fff;
   display: block;
   transition: 0.3s;
-  position: relative;
 }
 .sidenav a:hover {
   color: #f1f1f1;
 }
-.sidenav a.opt i {
+.sidenav .nb-icon {
+  display: inline-block;
+  position: inherit;
+  z-index: 30;
+  background: #30529c;
+  height: inherit;
+  cursor: pointer;
+  padding: 8px 8px 8px 20px;
+}
+.sidenav .nb-sub {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 5px;
+  color: #fff;
+  width: 250px;
+  height: auto;
+  background: #43a1c1;
+  border-radius: 0 1em 1em 0;
+  opacity: 0;
+  text-align: center;
+}
+.sidenav .nb-item {
+  background: #30529c;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  z-index: 20;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  transition: 0.3s;
+}
+.sidenav .nb-item i {
   margin-right: 20px;
 }
-.sidenav a.opt span {
+.sidenav .nb-item span {
   margin: 0;
+  display: inline-block;
+  font-family: "AvenirNext-DemiBold";
+  transition: 0.5s;
 }
-.sidenav a.opt .mini {
-  position: absolute;
+.sidenav .nb-item:hover {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.sidenav .nb-item:hover .nb-sub {
   top: 0;
-  right: -20px;
-  padding: 10px;
-  background: #30529c;
+  right: -250px;
+  color: #fff;
+  width: 250px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 82, 82, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(82, 82, 82, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(82, 82, 82, 0.5);
+  opacity: 1;
 }
 .sidenav .closebtn {
   position: absolute;
@@ -536,14 +530,6 @@ button:focus {
   right: 10px;
   font-size: 36px;
   margin-left: 50px;
-}
-.space {
-  transition: margin-left 0.5s;
-  padding: 16px;
-  margin-left: 250px;
-}
-.space.big {
-  margin-left: 70px;
 }
 @media screen and (max-height: 450px) {
   .sidenav {
@@ -565,5 +551,14 @@ button:focus {
   to {
     transform: rotate(-180deg);
   }
+}
+.space {
+  transition: padding-left 0.5s;
+  padding: 16px;
+  padding-left: 260px;
+  height: 100vh;
+}
+.space.big {
+  padding-left: 80px;
 }
 /*#endregion*/

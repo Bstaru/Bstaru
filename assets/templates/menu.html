@@ -3,53 +3,29 @@
 	<a href="javascript:void(0)" class="closebtn" onclick="minNav()"> 
 		<div class="IcoArrow">
 			<i class="mdi mdi-arrow-left-bold-hexagon-outline"></i> 
-		</div>
-		
+		</div>		
 	</a>
 
-	<a class="opt" href="#"> 
-		<i class="mdi mdi-human-greeting"></i> 
-		<span>About me</span>
-	</a>
-	<a class="opt" href="#"> 
-		<i class="mdi mdi-lead-pencil"></i> 
-		<span>Drawings</span> 
-	</a>
-	<a class="opt" href="#"> 
-		<i class="mdi mdi-responsive"></i> 
-		<span>Web stuff</span> 
-	</a>
-	<a class="opt" href="#"> 
-		<i class="mdi mdi-gmail"></i>
-		<span>Contact</span> 
-		<div class="mini">Contact</div> 
-	</a>
+	<ul>
+		<li onclick="" class="opt">
+			<i class="mdi mdi-human-greeting"></i>
+			<span>About me</span>
+		</li>
+		<li onclick="" class="opt">
+			<i class="mdi mdi-lead-pencil"></i>
+			<span>Drawings</span>
+		</li>
+		<li onclick="" class="opt">
+			<i class="mdi mdi-responsive"></i>
+			<span>Web stuff</span>
+		</li>
+		<li onclick="" class="opt">
+			<i class="mdi mdi-gmail"></i>
+			<span>Contact</span>
+			<div class="mini">Contact</div>
+		</li>
+	</ul>
 </div>
 
-<script>
-	var sta = 0;
-	function minNav() {
-		if (sta == 0) {
-			$('.sidenav').addClass('min');
-			$('.space').addClass('big');
-			$('.IcoArrow').addClass('girar');
-			$('.opt').find('span').addClass('elem_hide');
 
-			sta = 1;
-		}
-		
-		else{
-			$('.sidenav').removeClass('min');
-			$('.space').removeClass('big');
-			$('.IcoArrow').removeClass('girar');
-
-			setTimeout(function () {
-				$('.opt').find('span').removeClass('elem_hide');	
-			}, 300);
-			
-
-			sta = 0;
-		}
-	}
-</script>
 

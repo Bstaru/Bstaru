@@ -21,12 +21,13 @@
 		<script type="text/javascript" src="assets/lib/animations/animations.js"></script>
 		<script type="text/javascript" src="assets/js/funciones.js"></script>
 		<script type="text/javascript" src="assets/js/services/localstorage.js"></script>
+		<script type="text/javascript" src="assets/js/menu.js"></script>
 
 		<script type="text/javascript">
 			//INCLUIR UN ARCHIVO HTML DENTRO DEL HTML
 			$(function () {
 				var includes = $('[data-include]');
-				jQuery.each(includes, function () {
+				$.each(includes, function () {
 					var file = 'assets/templates/' + $(this).data('include') + '.html';
 					$(this).load(file);
 				});
@@ -35,12 +36,46 @@
 </head>
 
 <body class="">	
-	<div id="menu" data-include="menu"></div>
-	<div id="space" class="space">
-		<h2>Sidenav Push Example</h2>
-		<p>Click on the element below to open the side navigation menu, and push this content to the right.</p>
-		<span style="font-size:30px;cursor:pointer">&#9776; open</span>
+	<div id="" class="sidenav nb-l navbar fixed-left navbar-expand-sm navbar-toggleable-sm navbar-light box-shadow">
+
+		<a href="javascript:void(0)" class="closebtn" onclick="minNav()">
+			<div class="IcoArrow">
+				<i class="mdi mdi-arrow-left-bold-hexagon-outline"></i>
+			</div>
+		</a>
+
+		<div class="nbs">
+			
+			<div onclick="goTo('inicio');" class="nb-item">
+				<div class="nb-icon"> <i class="mdi mdi-home-heart"></i> </div>
+				<span>Home</span>
+				<div class="nb-sub elem_hide"><label>Home</label></div>
+			</div>
+			<div onclick="" class="nb-item">
+				<div class="nb-icon"> <i class="mdi mdi-human-greeting"></i> </div>
+				<span>About me</span>
+				<div class="nb-sub elem_hide"><label>About me</label></div>
+			</div>
+			<div onclick="goTo('draw');" class="nb-item">
+				<div class="nb-icon"><i class="mdi mdi-lead-pencil"></i></div>
+				<span>Drawings</span>
+				<div class="nb-sub elem_hide"><label>Drawings</label></div>
+			</div>
+			<div onclick="" class="nb-item">
+				<div class="nb-icon"><i class="mdi mdi-responsive"></i></div>
+				<span>Web stuff</span>
+				<div class="nb-sub elem_hide"><label>Web Stuff</label></div>
+			</div>
+			<div onclick="" class="nb-item">		
+				<div class="nb-icon"> <i class="mdi mdi-gmail"></i></div>
+				<span>Contact</span>
+				<div class="nb-sub elem_hide"><label>Contact</label></div>
+			</div>	
+		</div>
+		
 	</div>
+	<!--  -->
+	<div id="space" class="space" data-include="inicio"> </div>
 </body>
 
 </html>
