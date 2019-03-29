@@ -437,3 +437,68 @@
 
 	}
 /*#endregion*/
+
+/* #region ABOUT -------*/
+// .draws{
+// }
+.post {
+	display: block;
+	background: @blue;
+	width: 650px;
+	padding: 40px;
+	margin: 20px auto;
+	border-radius: 10px;
+  // clip-path: 
+	// 	polygon(
+	// 		0% 40px, /* top left */ 
+	// 		35px 0%, /* top left */ 
+			
+	// 		615px 0%, /* top right */ 
+	// 		100% 40px, /* top right */
+
+	// 		100% 95%, /* bottom right */ 
+	// 		615px 100%, /* bottom right */ 
+
+	// 		35px 100%, /* bottom left */ 
+	// 		0% 95% /* bottom left */);
+	.pict{
+		cursor: pointer;
+		width: 500px;
+		height: 500px;
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	}
+	.data{
+		display: block;
+	}
+}
+
+.fullpic{
+	.poss(fixed,0,0,0,0);
+	z-index: 100;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+
+	.spc{
+		margin: 0 auto;
+		max-height: 100vh;
+		background: red;
+
+		img{
+			width: 100%;
+		}
+	}
+}
+
+
+/*#endregion*/ 
